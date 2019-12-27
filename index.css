@@ -1,0 +1,130 @@
+/*
+	Lissone (MB) Italy
+	Sat Nov 30 21:48:03 CET 2013
+	Copyright 2013, 2014, 2015, 2016, 2017, 2018, 2019 Isidoro Ghezzi
+	isidoro.ghezzi@icloud.it
+*/
+
+body{
+	background: black;
+	margin: 0;
+	padding: 0;
+	font-family: monospace
+}
+h1{
+	color: #00FF00;
+	text-align: center;
+}
+h2{
+	margin-top: -8px;
+	color: green;
+	text-align: center;
+	font-size: smaller;
+}
+.container{
+	margin: 4px;
+	padding: 4px;
+	background: black;
+	color: green;
+}
+
+.date{
+	text-align: center;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.ig_button{
+	border-radius:8px;
+	color: #00ff00;
+	border: 1px solid #00ff00;
+	padding: 4px;
+	margin: 8px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.normal{
+	/* color: #00ff00; */
+}
+
+.busy{
+	/* color: black; */
+	background: green;
+}
+
+.markets ol li ul, ol li ul li{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.value{
+	padding-left: 1em;
+}
+
+.result_{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: monospace;
+	white-space: pre;
+	width: 43em
+}
+
+th{
+	text-transform: uppercase;
+	color: white;
+}
+.col_0{
+	color: gray;
+	text-align: right;
+}
+
+.col_1{
+	text-align: center;
+}
+.col_2{
+	color:#00ff00;
+	text-align: right;
+}
+
+.col_3{
+	color: cyan;
+	text-align: center;
+}
+
+.col_4{
+	color: gray;
+	text-align: right;
+}
+table{
+	margin:auto;
+}
+.lost-element{
+	/*text-decoration-line: line-through;
+	text-decoration-color: red;*/
+	background: #404040;
+	color: red;
+}
+
+.lost{
+	text-decoration-line: line-through;
+	background: #404040;
+}
+
+.footer{
+	text-align: center;
+	font-size: smaller;
+	margin-top: 4px;
+	padding-top: 4px;
+	border-top: 1px solid;
+}
+
+a{
+	color: green;
+}
+
+.genesis{
+	text-align: center;
+}

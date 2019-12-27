@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "test": "xo"
+  },
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "esnext": true,
+    "space": false,
+    "rules": {
+      "no-alert": 0
+    },
+    "envs": [
+		"browser",
+		"node"
+    ]
+  }
+}
