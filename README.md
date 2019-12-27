@@ -62,7 +62,7 @@ I firmatari attuali della propria stima sono:
 * `Ma͛rtiño 🐟`: https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0#commitcomment-36592916
 
 ## Premio per il vincitore
-Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere
+Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere, per eliminazione.
 
 ## Donazioni
 Ogni donazione è benvenuta all'indirizzo Bitcoin: `1p12pYog8jxVL3QaqevM4Gp32MZUoutck`
