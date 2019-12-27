@@ -44,6 +44,7 @@ Introduce i seguenti cambiamenti:
 
 ## Lingua ufficiale
 La lingua ufficiale, della competizione `#picco12` è la lingua Italiana.
+Sono bene accette ed auspicabili, traduzioni in altre lingue, ma la lingua di riferimento, in caso di controversie, resta quella Italiana.
 
 ## Come partecipare
 Per partecipare alla competizione `#picco12`, bisogna rendere pubblica, entro il 3 gennaio 2020 18.14 UTC, la propria stima in unità di cambio `satoshi/€`, nei gruppi telegram [Bitcoin Italia](https://t.me/bitcoinIta) o [Bitcoin Gateways](https://t.me/bitcoinIta_Gateways), mediante i tag `#picco12` o `#picco2020` con a seguire la stima in `satoshi/€`, oppure effettuando una PR firmata, con l'aggiunta della propria stima al file [data12.js](data12.js). Le stime possono anche essermi inviate con altri strumenti di comunicazione, che considererò di volta in volta validi oppure no.
