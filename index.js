@@ -27,13 +27,7 @@ let gController = null;
 				satoshiPerBitcoin: 100000000
 			};
 			self.jsonToMatrix = function (json) {
-				const ret = [];
-				json.forEach(element => {
-					const row = [];
-					Object.keys(element).forEach(key => row.push(element[key]));
-					ret.push(row);
-				});
-				return ret;
+				return json.map(element => Object.keys(element).map(key => element[key]));
 			};
 			self.matrixToTable = function (header, matrix, applyOnElement) {
 				const domTable = self.util.createElement('table');
