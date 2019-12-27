@@ -36,7 +36,7 @@ In tutte e tre le edizioni `#picco2017`, `picco2019`e `#picco2019` viene proclam
 ## Edizione `#picco12`
 
 Introduce i seguenti cambiamenti:
-* Viene servito e manutenuto con `git`, reso pubblicamente diponibile sulla piattaforma `GitHub` come pagine web statica;
+* Viene servito e manutenuto con `git`, reso pubblicamente diponibile sulla piattaforma `GitHub` come pagina web statica;
 * Si svolge nel periodo temporale che va dal 3 gennaio 2020 18.15 UTC al 3 gennaio 2021 18.14 UTC;
 * Viene denominato `#picco12` perché si svolgerà nell'Anno Genesi (AG) 12 dal blocco genesi di Bitcoin.
 * Vince chi si avvicina di più in difetto alla quotazione minima in unità di conto `satoshi/€`. Chi `sfora` anche di una sola frazione di satoshi, viene eliminato; ad esempio se bitcoin dovesse essere quotato 9999 satosh/€, qualunque giocatore con stima superiore (quindi ad esempio 10000 o 9999.01 satoshi/€) verrebbe eliminato.
