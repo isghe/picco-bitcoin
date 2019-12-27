@@ -2,6 +2,7 @@
 ![#p12](p12.png)
 
 https://isghe.github.io/picco-bitcoin/
+https://tinyurl.com/picco12
 
 Stima picco massimo di bitcoin fra 3 gennaio 2020 18.15 UTC e 3 gennaio 2021 18.14 UTC.
 
