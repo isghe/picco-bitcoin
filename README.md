@@ -52,7 +52,7 @@ Per partecipare alla competizione `#picco12`, bisogna rendere pubblica, entro il
 La partecipazione è gratuita.
 
 ## Partecipazione anonima
-Sono consentite partecipazioni anonime o farlocche, a patto che i nomignoli o avatar utilizzati, non offendano (a mio unico ed insindacabile giudizio) il comune senso del podure o decenza.
+Sono consentite partecipazioni anonime o farlocche, a patto che i nomignoli o avatar utilizzati, non offendano (a mio unico ed insindacabile giudizio) il comune senso del pudore o decenza.
 
 ## Partecipazione firmata
 Sono consentite tramite PR firmata al file [data12.js](data12.js) di questo stesso Repository.
