@@ -5,6 +5,7 @@
 * [Finalità](#finalità)
 * [Storia](#storia)
 * [Edizione #picco12](#edizione-picco12)
+* [Lingua ufficiale](#lingua-ufficiale)
 * [Come partecipare](#come-partecipare)
 * [Prezzo partecipazione](#prezzo-partecipazione)
 * [Partecipazione anonima](#partecipazione-anonima)
@@ -40,6 +41,9 @@ Introduce i seguenti cambiamenti:
 * Si svolge nel periodo temporale che va dal 3 gennaio 2020 18.15 UTC al 3 gennaio 2021 18.14 UTC;
 * Viene denominato `#picco12` perché si svolgerà nell'Anno Genesi (AG) 12 dal blocco genesi di Bitcoin.
 * Vince chi si avvicina di più in difetto alla quotazione minima in unità di conto `satoshi/€`. Chi `sfora` anche di una sola frazione di satoshi, viene eliminato; ad esempio se bitcoin dovesse essere quotato 9999 satosh/€, qualunque giocatore con stima superiore (quindi ad esempio 10000 o 9999.01 satoshi/€) verrebbe eliminato.
+
+## Lingua ufficiale
+La lingua ufficiale, della competizione `#picco12` è la lingua Italiana.
 
 ## Come partecipare
 Per partecipare alla competizione `#picco12`, bisogna rendere pubblica, entro il 3 gennaio 2020 18.14 UTC, la propria stima in unità di cambio `satoshi/€`, nei gruppi telegram [Bitcoin Italia](https://t.me/bitcoinIta) o [Bitcoin Gateways](https://t.me/bitcoinIta_Gateways), mediante i tag `#picco12` o `#picco2020` con a seguire la stima in `satoshi/€`, oppure effettuando una PR, con l'aggiunta della propria stima al file [data12.js](data12.js). Le stime possono anche essermi inviate con altri strumenti di comunicazione, che considererò di volta in volta validi oppure no.
