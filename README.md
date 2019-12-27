@@ -6,6 +6,7 @@
 * [Storia](#storia)
 * [Edizione #picco12](#edizione-picco12)
 * [Lingua ufficiale](#lingua-ufficiale)
+* [Rischi](#rischi)
 * [Come partecipare](#come-partecipare)
 * [Prezzo partecipazione](#prezzo-partecipazione)
 * [Partecipazione anonima](#partecipazione-anonima)
@@ -45,6 +46,14 @@ Introduce i seguenti cambiamenti:
 ## Lingua ufficiale
 La lingua ufficiale, della competizione `#picco12` è la lingua Italiana.
 Sono bene accette ed auspicabili, traduzioni in altre lingue, ma la lingua di riferimento, in caso di controversie, resta quella Italiana.
+
+## Rischi
+Tutti i partecipanti alla competizione `#picco12` sono consapevoli che:
+* Essendo il codice sorgente, e la base dati [data12.js](data12.js), aperti e distribuiti, NON è attuabile il diritto all'oblio.
+
+Tutti gli osservatori (anche non partecipanti alla competizione) sono avvisati che:
+* Le stime dichiarate (firmate o no che siano) da qualuque partecipante alla competizione, NON devono essere prese in alcun modo, come consigli finanziari; nessuno ha una `sfera di cristallo` e nessuno sa predirre il futuro. Ed anzi, proprio l'enorme volatilità nelle stime, dovrebbe volutamente lasciare intendere, quanto la quotazione futura di Bitcoin, sia davvero imprevedibile.
+* Il software pubblicato, è stato scritto per gioco, svago e divertimento; NON deve essere utilizzato in ambienti di produzione, e nel caso venisse utilizzato, il tutto sarebbe a proprio rischio e pericolo, di chi lo utlizza.
 
 ## Come partecipare
 Per partecipare alla competizione `#picco12`, bisogna rendere pubblica, entro il 3 gennaio 2020 18.14 UTC, la propria stima in unità di cambio `satoshi/€`, nei gruppi telegram [Bitcoin Italia](https://t.me/bitcoinIta) o [Bitcoin Gateways](https://t.me/bitcoinIta_Gateways), mediante i tag `#picco12` o `#picco2020` con a seguire la stima in `satoshi/€`, oppure effettuando una PR firmata, con l'aggiunta della propria stima al file [data12.js](data12.js). Le stime possono anche essermi inviate con altri strumenti di comunicazione, che considererò di volta in volta validi oppure no.
