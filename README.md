@@ -11,4 +11,6 @@ Per partecipare basta scrivere un messaggio del tipo `#picco12 12345` o `#picco2
 
 Per convertire da `€/₿` a `satoshi/€` e viceversa, è disponibile la paginetta [satoshieuro-eurobitcoin_converter](https://isghe.github.io/satoshieuro-eurobitcoin_converter/)
 
-Contrariamente agli altri anni [#picco2019](http://tinyurl.com/picco2019), in cui veniva premiato, che si avvicinava di più al picco, da quest anno, i partecipamenti verranno eliminati al superamento della soglia; quindi ad esempio se Bitcoin raggiunge la quotazione di 9999 satoshi/€, tutti quelli che hanno previsto una quotazione maggiore di 9999 satoshi/€ (quindi ad esempio 10000 satoshi/€) saranno eliminati.
+Contrariamente agli altri anni [#picco2019](http://tinyurl.com/picco2019), in cui veniva premiato, che si avvicinava di più al picco, da quest'anno, i partecipamenti verranno eliminati al superamento della soglia; quindi ad esempio se Bitcoin raggiunge la quotazione di 9999 satoshi/€, tutti quelli che hanno previsto una quotazione maggiore di 9999 satoshi/€ (quindi ad esempio 10000 satoshi/€) saranno eliminati.
+
+*1p12pYog8jxVL3QaqevM4Gp32MZUoutck*
