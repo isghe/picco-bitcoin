@@ -51,7 +51,10 @@ La partecipazione è gratuita.
 Sono consentite partecipazioni anonime o farlocche, a patto che i nomignoli o avatar utilizzati, non offendano (a mio unico ed insindacabile giudizio) il comune senso del podure o decenza.
 
 ## Partecipazione firmata
-Sono consentite tramite PR firmata al file [data12.js](data12.js) di questo stesso Repository. Si osservi che attualmente l'unica partecipazione firmata è la mia, con commit: [f38fad388da19757180e89b8762154cf1c62c7b0](https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0)
+Sono consentite tramite PR firmata al file [data12.js](data12.js) di questo stesso Repository.
+I firmatari attuali della propria stima sono:
+* `Isidoro Ghezzi ⚡️`: [f38fad388da19757180e89b8762154cf1c62c7b0](https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0)
+* `Ma͛rtiño 🐟`: https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0#commitcomment-36592916
 
 ## Premio per il vincitore
 Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere
