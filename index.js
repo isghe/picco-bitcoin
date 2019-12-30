@@ -67,11 +67,8 @@ let gController = null;
 					self.jsonToMatrix(extraData),
 					(row, domElement, i) => {
 						if (row[2] > self.model.minValue) {
-							if (i === 2) {
-								domElement.classList.add('lost-element');
-							} else {
-								domElement.classList.add('lost');
-							}
+							const classes = ['lost', 'lost-element'];
+							domElement.classList.add(classes[Number(i === 2)]);
 						}
 					}
 				);
