@@ -24,11 +24,10 @@ let gController = null;
 				title: '#picco12',
 				subTitle: '(#picco2020)',
 				minValue: 8200,
-				satoshiPerBitcoin: 100000000
+				satoshiPerBitcoin: 100000000,
+				columnSatoshiPerBitcoinIndex: 2
 			};
-			self.jsonToMatrix = function (json) {
-				return json.map(element => Object.keys(element).map(key => element[key]));
-			};
+			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
 			self.matrixToTable = function (header, matrix, applyOnElement) {
 				const domTable = self.util.createElement('table');
 				const domHeader = self.util.createElement('tr');
@@ -66,9 +65,9 @@ let gController = null;
 					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿'],
 					self.jsonToMatrix(extraData),
 					(row, domElement, i) => {
-						if (row[2] > self.model.minValue) {
+						if (row[self.model.columnSatoshiPerBitcoinIndex] > self.model.minValue) {
 							const classes = ['lost', 'lost-element'];
-							domElement.classList.add(classes[Number(i === 2)]);
+							domElement.classList.add(classes[Number(i === self.model.columnSatoshiPerBitcoinIndex)]);
 						}
 					}
 				);
