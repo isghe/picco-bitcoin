@@ -12,8 +12,8 @@
       "no-alert": 0
     },
     "envs": [
-		"browser",
-		"node"
+      "browser",
+      "node"
     ]
   }
 }
