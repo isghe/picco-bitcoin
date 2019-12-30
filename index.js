@@ -47,8 +47,10 @@ let gController = null;
 			};
 			self.convert = value => self.model.satoshiPerBitcoin / value;
 			self.show = function () {
-				document.querySelector('#title').textContent = self.model.title;
-				document.querySelector('#sub-title').textContent = self.model.subTitle;
+				const domTitle = self.util.createElement('h1', {id: 'title', textContent: self.model.title});
+				const domSubTitle = self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle});
+				const domHeader = self.util.createElement('div', null, ['header']);
+				[domTitle, domSubTitle].forEach(dom => domHeader.append(dom));
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const extraData = gData.map((row, i) => { // eslint-disable-line no-undef
@@ -80,7 +82,7 @@ let gController = null;
 				const domAddress = self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'});
 				[domGenesis, domDate, domGithub, domAddress].forEach(dom => domFooter.append(dom));
 				const domContainer = document.querySelector('#container');
-				[domMatrix, domFooter].forEach(dom => domContainer.append(dom));
+				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 			};
 		};
 		gController = new ClassController(new Date());
