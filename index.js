@@ -69,16 +69,17 @@ let gController = null;
 							const classes = ['lost', 'lost-element'];
 							domElement.classList.add(classes[Number(i === self.model.columnSatoshiPerBitcoinIndex)]);
 						}
+						return domElement;
 					}
 				);
-				const domGenesis = self.util.createElement('div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']);
 				const domFooter = self.util.createElement('div', null, ['footer']);
-				const domDate = self.util.createElement('div', {textContent: theNow});
-				const domGithub = self.util.createElement('a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'});
-				const domAddress = self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'});
-				[domGenesis, domDate, domGithub, domAddress].forEach(dom => domFooter.append(dom));
-				const domContainer = document.querySelector('#container');
+				[self.util.createElement('div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']),
+				self.util.createElement('div', {textContent: theNow}),
+				self.util.createElement('a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}),
+				self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'})].forEach(dom => domFooter.append(dom));
+				const domContainer = self.util.createElement('div', null, ['container']);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
+				document.body.append(domContainer);
 			};
 		};
 		gController = new ClassController(new Date());
