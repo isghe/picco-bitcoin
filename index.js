@@ -23,7 +23,7 @@ let gController = null;
 			self.model = {
 				title: '#picco12',
 				subTitle: '(#picco2020)',
-				minValue: 8200,
+				minValue: 12000,
 				satoshiPerBitcoin: 100000000,
 				columnSatoshiPerBitcoinIndex: 2
 			};
