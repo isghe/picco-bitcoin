@@ -44,7 +44,7 @@ let gController = null;
 			self.show = () => {
 				const domHeader = self.util.createElement('div', null, ['header']);
 				[self.util.createElement('h1', {id: 'title', textContent: self.model.title}),
-				self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle})].forEach(dom => domHeader.append(dom));
+					self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle})].forEach(dom => domHeader.append(dom));
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const extraData = gData.map((row, i) => { // eslint-disable-line no-undef
@@ -69,9 +69,9 @@ let gController = null;
 				);
 				const domFooter = self.util.createElement('div', null, ['footer']);
 				[self.util.createElement('div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']),
-				self.util.createElement('div', {textContent: theNow}),
-				self.util.createElement('a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}),
-				self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'})].forEach(dom => domFooter.append(dom));
+					self.util.createElement('div', {textContent: theNow}),
+					self.util.createElement('a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}),
+					self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'})].forEach(dom => domFooter.append(dom));
 				const domContainer = self.util.createElement('div', null, ['container']);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
