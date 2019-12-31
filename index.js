@@ -28,28 +28,23 @@ let gController = null;
 				columnSatoshiPerBitcoinIndex: 2
 			};
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
-			self.matrixToTable = function (header, matrix, applyOnElement) {
+			self.matrixToTable = (header, matrix, applyOnElement) => {
 				const domTable = self.util.createElement('table');
 				const domHeader = self.util.createElement('tr');
 				header.forEach(value => domHeader.append(self.util.createElement('th', {textContent: value})));
 				domTable.append(domHeader);
 				matrix.forEach(row => {
 					const domRow = self.util.createElement('tr');
-					row.forEach((value, i) => {
-						const domElement = self.util.createElement('td', {textContent: value}, ['col_' + i]);
-						applyOnElement(row, domElement, i);
-						domRow.append(domElement);
-					});
+					row.forEach((value, i) => domRow.append(applyOnElement(row, self.util.createElement('td', {textContent: value}, ['col_' + i]), i)));
 					domTable.append(domRow);
 				});
 				return domTable;
 			};
 			self.convert = value => self.model.satoshiPerBitcoin / value;
-			self.show = function () {
-				const domTitle = self.util.createElement('h1', {id: 'title', textContent: self.model.title});
-				const domSubTitle = self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle});
+			self.show = () => {
 				const domHeader = self.util.createElement('div', null, ['header']);
-				[domTitle, domSubTitle].forEach(dom => domHeader.append(dom));
+				[self.util.createElement('h1', {id: 'title', textContent: self.model.title}),
+				self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle})].forEach(dom => domHeader.append(dom));
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const extraData = gData.map((row, i) => { // eslint-disable-line no-undef
