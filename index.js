@@ -7,15 +7,15 @@ let gController = null;
 		const ClassController = function (theNow) {
 			const self = this;
 			self.util = {
-				createElement(theTag, theProperties, theClassList) {
-					const ret = document.createElement(theTag);
-					if ((typeof undefined !== typeof theProperties) && (theProperties !== null)) {
-						Object.keys(theProperties).forEach(theProperty => {
-							ret[theProperty] = theProperties[theProperty];
+				createElement(arg) {
+					const ret = document.createElement(arg[0]);
+					if ((typeof undefined !== typeof arg[1]) && (arg[1] !== null)) {
+						Object.keys(arg[1]).forEach(theProperty => {
+							ret[theProperty] = arg[1][theProperty];
 						});
 					}
-					if ((typeof undefined !== typeof theClassList) && (theClassList !== null)) {
-						theClassList.forEach(theClass => ret.classList.add(theClass));
+					if ((typeof undefined !== typeof arg[2]) && (arg[2] !== null)) {
+						arg[2].forEach(theClass => ret.classList.add(theClass));
 					}
 					return ret;
 				}
@@ -29,13 +29,13 @@ let gController = null;
 			};
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
 			self.matrixToTable = (header, matrix, applyOnElement) => {
-				const domTable = self.util.createElement('table');
-				const domHeader = self.util.createElement('tr');
-				header.forEach(value => domHeader.append(self.util.createElement('th', {textContent: value})));
+				const domTable = self.util.createElement(['table']);
+				const domHeader = self.util.createElement(['tr']);
+				header.forEach(value => domHeader.append(self.util.createElement(['th', {textContent: value}])));
 				domTable.append(domHeader);
 				matrix.forEach(row => {
-					const domRow = self.util.createElement('tr');
-					row.forEach((value, i) => domRow.append(applyOnElement(row, self.util.createElement('td', {textContent: value}, ['col_' + i]), i)));
+					const domRow = self.util.createElement(['tr']);
+					row.forEach((value, i) => domRow.append(applyOnElement(row, self.util.createElement(['td', {textContent: value}, ['col_' + i]]), i)));
 					domTable.append(domRow);
 				});
 				return domTable;
@@ -43,9 +43,9 @@ let gController = null;
 			self.convert = value => self.model.satoshiPerBitcoin / value;
 			self.showFloat = value => parseFloat(value).toFixed(2);
 			self.show = () => {
-				const domHeader = self.util.createElement('div', null, ['header']);
-				[self.util.createElement('h1', {id: 'title', textContent: self.model.title}),
-					self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle})].forEach(dom => domHeader.append(dom));
+				const domHeader = self.util.createElement(['div', null, ['header']]);
+				[['h1', {id: 'title', textContent: self.model.title}],
+				['h2', {id: 'sub-title', textContent: self.model.subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
@@ -59,12 +59,12 @@ let gController = null;
 						return domElement;
 					}
 				);
-				const domFooter = self.util.createElement('div', null, ['footer']);
-				[self.util.createElement('div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']),
-					self.util.createElement('div', {textContent: theNow}),
-					self.util.createElement('a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}),
-					self.util.createElement('div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'})].forEach(dom => domFooter.append(dom));
-				const domContainer = self.util.createElement('div', null, ['container']);
+				const domFooter = self.util.createElement(['div', null, ['footer']]);
+				[['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
+				['div', {textContent: theNow}],
+				['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
+				['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]].forEach(dom => domFooter.append(self.util.createElement(dom)));
+				const domContainer = self.util.createElement(['div', null, ['container']]);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
 			};
