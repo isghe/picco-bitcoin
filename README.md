@@ -10,7 +10,7 @@
 * [Come partecipare](#come-partecipare)
 * [Prezzo partecipazione](#prezzo-partecipazione)
 * [Partecipazione anonima](#partecipazione-anonima)
-* [Parteciapazione firmata](#partecipazione-firmata)
+* [Partecipazione firmata](#partecipazione-firmata)
 * [Premio per il vincitore](#premio-per-il-vincitore)
 * [Dettagli tecnici](#dettagli-tecnici)
 	* [Vanilla JS](#vanilla-js)
