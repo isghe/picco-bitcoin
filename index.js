@@ -41,24 +41,16 @@ let gController = null;
 				return domTable;
 			};
 			self.convert = value => self.model.satoshiPerBitcoin / value;
+			self.showFloat = value => parseFloat(value).toFixed(2);
 			self.show = () => {
 				const domHeader = self.util.createElement('div', null, ['header']);
 				[self.util.createElement('h1', {id: 'title', textContent: self.model.title}),
 					self.util.createElement('h2', {id: 'sub-title', textContent: self.model.subTitle})].forEach(dom => domHeader.append(dom));
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
-				const extraData = gData.map((row, i) => { // eslint-disable-line no-undef
-					return {
-						indice: i + 1,
-						nome: row.nome,
-						'satoshi/€': parseFloat(row['satoshi/€']).toFixed(2),
-						'telegram-id': row['telegram-id'],
-						'€/₿': parseFloat(self.convert(row['satoshi/€'])).toFixed(2)
-					};
-				});
 				const domMatrix = self.matrixToTable(
 					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿'],
-					self.jsonToMatrix(extraData),
+					self.jsonToMatrix(gData).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1]))]), // eslint-disable-line no-undef
 					(row, domElement, i) => {
 						if (row[self.model.columnSatoshiPerBitcoinIndex] > self.model.minValue) {
 							const classes = ['lost', 'lost-element'];
