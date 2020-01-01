@@ -51,7 +51,7 @@ let gController = null;
 					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿'],
 					self.jsonToMatrix(gData).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1]))]), // eslint-disable-line no-undef
 					(row, domElement, i) => {
-						if (row[self.model.columnSatoshiPerBitcoinIndex] > self.model.minValue) {
+						if (false && row[self.model.columnSatoshiPerBitcoinIndex] > self.model.minValue) {
 							const classes = ['lost', 'lost-element'];
 							domElement.classList.add(classes[Number(i === self.model.columnSatoshiPerBitcoinIndex)]);
 						}
