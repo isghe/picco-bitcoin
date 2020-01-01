@@ -12,6 +12,13 @@
 * [Partecipazione anonima](#partecipazione-anonima)
 * [Parteciapazione firmata](#partecipazione-firmata)
 * [Premio per il vincitore](#premio-per-il-vincitore)
+* [Dettagli tecnici](#dettagli-tecnici)
+	* [Vanilla JS](#vanilla-js)
+	* [Database dei concorrenti](#database-dei-concorrenti)
+	* [Picco](#picco)
+	* [Linter xo](#linter-xo)
+	* [Commit firmate](#commit-firmate)
+	* [Opentimestamps](#opentimestamps)
 * [Donazioni](#donazioni)
 
 ## URL
@@ -72,6 +79,32 @@ I firmatari attuali della propria stima sono:
 
 ## Premio per il vincitore
 Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere, per eliminazione.
+
+## Dettagli tecnici
+https://isghe.github.io/picco-bitcoin/ è una pagina web html statica. Il codice in `index.html` è il codice minimalista `html`, per caricare i file `p12.png` (l'icona che appare nel browser), gli stili in `index.css`, il database dei concorrenti in `data12.js` e finalmente il codice JavaScript in `index.js`.
+
+### Vanilla-JS
+
+Il codice in JavaScript è un [vanilla-js](http://vanilla-js.com), quindi JavaScript puro, senza l'utilizzo di alcun framework o library; tutti gli elementi `dom` vengono creati runtime in JavaScript:
+* NO TypeScript;
+* NO jQuery;
+* NO AngularJS;
+* NO ReactJS;
+
+### Database dei concorrenti
+Il database dei concorrenti, contenuto in `data12.js`, è un JSON assegnato alla costante globale `gData`; viene aggiornato a `manina` via via che i concorrenti chiedono di inserire la propria stima, e `pushato` su `github`.
+
+### Picco
+Il `picco` minimo raggiunto, in unità di cambio `satoshi/€`, viene anch'esso aggiornato a manina, nel campo `self.model.minValue` del file `index.js`.
+
+### Linter xo
+Prima della pubblicazione su `github` viene effettuato un controllo sintattico tramite il `linter` [xo](https://github.com/xojs/xo).
+
+### Commit firmate
+Ogni commit viene crittograficamente firmata, con la mia chiave pubblica, la cui impronta crittografica è: `06A1 72EB ED3E 6F59 5233  1984 971E 1F79 80BB 3DEB`
+
+### Opentimestamps
+Ogni commit viene `opentimestampata` tramite [opentimestamps](https://opentimestamps.org) su `Bitcoin`.
 
 ## Donazioni
 Ogni donazione è benvenuta all'indirizzo Bitcoin: `1p12pYog8jxVL3QaqevM4Gp32MZUoutck`
