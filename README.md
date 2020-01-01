@@ -18,7 +18,7 @@
 	* [Picco](#picco)
 	* [Linter xo](#linter-xo)
 	* [Commit firmate](#commit-firmate)
-	* [Opentimestamps](#opentimestamps)
+	* [Certificazione temporale - Opentimestamps](#certificazione-temporale-opentimestamps)
 * [Donazioni](#donazioni)
 
 ## URL
@@ -48,7 +48,9 @@ Introduce i seguenti cambiamenti:
 * Viene servito e manutenuto con `git`, reso pubblicamente diponibile sulla piattaforma `GitHub` come pagina web statica;
 * Si svolge nel periodo temporale che va dal 3 gennaio 2020 18.15 UTC al 3 gennaio 2021 18.14 UTC;
 * Viene denominato `#picco12` perché si svolgerà nell'Anno Genesi (AG) 12 dal blocco genesi di Bitcoin.
-* Vince chi si avvicina di più in difetto alla quotazione minima in unità di conto `satoshi/€`. Chi `sfora` anche di una sola frazione di satoshi, viene eliminato; ad esempio se bitcoin dovesse essere quotato 9999 satosh/€, qualunque giocatore con stima superiore (quindi ad esempio 10000 o 9999.01 satoshi/€) verrebbe eliminato.
+* Vince chi si avvicina di più in difetto alla quotazione minima in unità di conto `satoshi/€`. Chi `sfora` anche di una sola frazione di satoshi, viene eliminato; ad esempio se bitcoin dovesse essere quotato 9999 satosh/€, qualunque giocatore con stima superiore (quindi ad esempio 10000 o 9999.01 satoshi/€) verrebbe eliminato. I concorrenti eliminati vengono evidenziati con un'appropriata rappresentazione grafica, ad esempio:
+
+![#picco12-esempio-9999](picco12-esempio-9999.png)
 
 ## Lingua ufficiale
 La lingua ufficiale, della competizione `#picco12` è la lingua Italiana.
@@ -103,8 +105,8 @@ Prima della pubblicazione su `github` viene effettuato un controllo sintattico t
 ### Commit firmate
 Ogni commit viene crittograficamente firmata, con la mia chiave pubblica, la cui impronta crittografica è: `06A1 72EB ED3E 6F59 5233  1984 971E 1F79 80BB 3DEB`
 
-### Opentimestamps
-Ogni commit viene `opentimestampata` tramite [opentimestamps](https://opentimestamps.org) su `Bitcoin`.
+### Certificazione temporale - Opentimestamps
+Ogni commit viene `certificata temporalmente` tramite [opentimestamps](https://opentimestamps.org) su `Bitcoin`.
 
 ## Donazioni
 Ogni donazione è benvenuta all'indirizzo Bitcoin: `1p12pYog8jxVL3QaqevM4Gp32MZUoutck`
