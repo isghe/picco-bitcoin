@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 /* eslint-disable capitalized-comments */
 let gController = null;
 (function () {
