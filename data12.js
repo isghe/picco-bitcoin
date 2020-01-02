@@ -220,5 +220,26 @@ const gData = [
 		nome: 'Miky Alucard',
 		'satoshi/€': 1969,
 		'telegram-id': '@mithrilsecurity'
+	},
+
+	{
+		nome: 'Marco Male',
+		'satoshi/€': 6850,
+		'telegram-id': '@Supericochek'
+	},
+	{
+		nome: 'Daniela Brozzoni 🦄',
+		'satoshi/€': 2700,
+		'telegram-id': '@imaprincess'
+	},
+	{
+		nome: 'Valerio Vaccaro [I don\'t ask or send BTC]',
+		'satoshi/€': 1123.58,
+		'telegram-id': '@valerio_vaccaro'
+	},
+	{
+		nome: 'Gabriele',
+		'satoshi/€': 4507,
+		'telegram-id': '@gtabbas'
 	}
 ];
