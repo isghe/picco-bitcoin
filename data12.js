@@ -44,7 +44,7 @@ const gData = [
 		nome: '{Andrea zyx}',
 		'satoshi/€': 6250,
 		'telegram-id': '@Andreazyx',
-		'penalità': 1
+		penalità: 1
 	},
 	{
 		nome: 'Pindol',
@@ -200,5 +200,25 @@ const gData = [
 		nome: 'Crypto Luc',
 		'satoshi/€': 12000,
 		'telegram-id': '@Cryptojamal'
+	},
+	{
+		nome: 'Giulio Di Sano',
+		'satoshi/€': 1103,
+		'telegram-id': '@giuliodisano'
+	},
+	{
+		nome: 'Natoshi Sakamoto',
+		'satoshi/€': 7000,
+		'telegram-id': '@satoshuk'
+	},
+	{
+		nome: 'M4rc0 ⚡️3m1n4r1',
+		'satoshi/€': 2272.72,
+		'telegram-id': '@Seminella'
+	},
+	{
+		nome: 'Miky Alucard',
+		'satoshi/€': 1969,
+		'telegram-id': '@mithrilsecurity'
 	}
 ];
