@@ -41,9 +41,10 @@ const gData = [
 		'telegram-id': null
 	},
 	{
-		nome: '{Andrea zyx}',
+		nome: 'Andrea zyx',
 		'satoshi/€': 6250,
-		'telegram-id': '@Andreazyx'
+		'telegram-id': '@Andreazyx',
+		'penalità': 1
 	},
 	{
 		nome: 'Pindol',
@@ -184,5 +185,10 @@ const gData = [
 		nome: 'Andrea zyx',
 		'satoshi/€': 12658,
 		'telegram-id': '@Andreazyx'
+	},
+	{
+		nome: 'emacosc',
+		'satoshi/€': 3703,
+		'telegram-id': '@emacosc'
 	}
 ];
