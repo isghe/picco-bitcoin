@@ -29,7 +29,7 @@
 * Paginetta per convertire da `€/₿` a `satoshi/€` e viceversa [satoshieuro-eurobitcoin_converter](https://isghe.github.io/satoshieuro-eurobitcoin_converter/)
 
 ## Finalità
-Stimare il picco massimo di bitcoin fra il 3 gennaio 2020 18.15 UTC e il 3 gennaio 2021 18.14 UTC.
+Stimare il picco massimo di bitcoin, nel 12 AG (Anno Genesi) fra il 3 gennaio 2020 18.15 UTC e il 3 gennaio 2021 18.14 UTC.
 
 ## Storia
 Il gioco è nato sul gruppo telegram [Bitcoin Italia](https://t.me/bitcoinIta) a fine 2016, quando la quotazione di 1000 €/₿ era per alcuni un miraggio, da un'idea di Guido Baroncini Turicchia, servito e manutenuto nelle edizioni `#picco2017`, `#picco2018` e `#picco2019` su un foglio elettronico in `google docs` [#picco2019](http://tinyurl.com/picco2019).
@@ -78,6 +78,7 @@ Sono consentite tramite PR firmata al file [data12.js](data12.js) di questo stes
 I firmatari attuali della propria stima sono:
 * `Isidoro Ghezzi ⚡️`: [f38fad388da19757180e89b8762154cf1c62c7b0](https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0)
 * `Ma͛rtiño 🐟`: https://github.com/isghe/picco-bitcoin/commit/f38fad388da19757180e89b8762154cf1c62c7b0#commitcomment-36592916
+* `Alekos Filini`: https://github.com/isghe/picco-bitcoin/pull/1
 
 ## Premio per il vincitore
 Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere, per eliminazione.
