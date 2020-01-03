@@ -268,8 +268,20 @@ const gData = [
 		'telegram-id': '@KeyAsus'
 	},
 	{
+		nome: '{J Paolo}',
+		'satoshi/€': 32799.06,
+		'telegram-id': '@Jpao83',
+		penalità: 1
+
+	},
+	{
 		nome: 'J Paolo',
-		'satoshi/€': 32799.06 ,
+		'satoshi/€': 8716.38,
 		'telegram-id': '@Jpao83'
+	},
+	{
+		nome: 'Bitergosum',
+		'satoshi/€': 6660,
+		'telegram-id': '@bitergosum'
 	}
 ];
