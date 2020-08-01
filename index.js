@@ -37,6 +37,9 @@ let gController = null;
 					const domRow = self.util.createElement(['tr']);
 					row.forEach((value, i) => domRow.append(applyOnElement(row, self.util.createElement(['td', {textContent: value}, ['col_' + i]]), i)));
 					domTable.append(domRow);
+					if (typeof (row[5]) !== 'undefined') {
+						domRow.classList.add('penalita');
+					}
 				});
 				return domTable;
 			};
@@ -49,8 +52,8 @@ let gController = null;
 				document.title = self.model.title;
 				gData.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
-					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿'],
-					self.jsonToMatrix(gData).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1]))]), // eslint-disable-line no-undef
+					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿', 'penalità'],
+					self.jsonToMatrix(gData).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]), // eslint-disable-line no-undef
 					(row, domElement, i) => {
 						if (row[self.model.columnSatoshiPerBitcoinIndex] > self.model.minValue) {
 							const classes = ['lost', 'lost-element'];

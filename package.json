@@ -15,5 +15,8 @@
       "browser",
       "node"
     ]
+  },
+  "dependencies": {
+    "coverage": "^0.4.1"
   }
 }
