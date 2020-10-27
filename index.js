@@ -25,7 +25,8 @@ let gController = null;
 				satoshiPerBitcoin: 100000000,
 				// minValue: 12540,
 				// minValue: 11749.5, // 29 jan 2020
-				minValue: 9933.44, // 1 aug 2020
+				// minValue: 9933.44, // 1 aug 2020
+				minValue: 8600.397166341141, // 27 oct 2020
 				columnSatoshiPerBitcoinIndex: 2
 			};
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
