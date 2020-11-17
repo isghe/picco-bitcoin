@@ -28,7 +28,8 @@ let gController = null;
 				// minValue: 9933.44, // 1 aug 2020
 				// minValue: 8600.397166341141, // 27 oct 2020
 				// minValue: 8486.522129879433, // 28 oct 2020
-				minValue: 6949.888523788079, // 17 nov 2020
+				// minValue: 6949.888523788079, // 17 nov 2020
+				minValue: 6652.284427733905, // 17 nov 2020
 				columnSatoshiPerBitcoinIndex: 2
 			};
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
