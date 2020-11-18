@@ -230,7 +230,7 @@ const gData = [
 	{
 		nome: 'Daniela Brozzoni 🦄',
 		'satoshi/€': 2700,
-		'telegram-id': '@imaprincess'
+		'telegram-id': '@danielabrozzoni'
 	},
 	{
 		nome: 'Valerio Vaccaro [I don\'t ask or send BTC]',
