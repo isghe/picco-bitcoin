@@ -36,7 +36,7 @@ Il gioco è nato sul gruppo telegram [Bitcoin Italia](https://t.me/bitcoinIta) a
 
 Le edizioni del `#picco2017`, `#picco2018` comprendevano il periodo dal primo dell'anno all'ultimo dell'anno, e le stime venivano effettuate in €/₿.
 
-Nell'edizione `picco2019`, attualmente in corso, sono state introdotte due grosse novità:
+Nell'edizione `#picco2019`, sono state introdotte due grosse novità:
 * periodo dal 3 gennaio 2019 18.15 UTC al 3 gennaio 2020 18.15 UTC;
 * stima in unità di cambio `satoshi/€`
 
