@@ -128,7 +128,9 @@ let gController = null;
 					}
 				);
 				const domFooter = self.util.createElement(['div', null, ['footer']]);
-				[['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
+				[
+				['div', {textContent: 'anno genesi ' + self.model.current.annoGenesi}],
+				['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
 				['div', {textContent: theNow}],
 				['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
 				['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]].forEach(dom => domFooter.append(self.util.createElement(dom)));
