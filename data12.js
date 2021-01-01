@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const gData = [
+const gData12 = [
 	{
 		nome: 'Isidoro Ghezzi ⚡️',
 		'satoshi/€': 10 * Math.sqrt(1000),
