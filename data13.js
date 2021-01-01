@@ -109,5 +109,45 @@ const gData13 = [
 		nome: 'Robin di Loxley',
 		'satoshi/€': 1430,
 		'telegram-id': '@RobindiLoxley'
+	},
+	{
+		nome: 'mordom',
+		'satoshi/€': 1538,
+		'telegram-id': '@mordom'
+	},
+	{
+		nome: 'Gabriele Domenichini',
+		'satoshi/€': 1666,
+		'telegram-id': '@Gabridome'
+	},
+	{
+		nome: 'Salvatoshi ₿',
+		'satoshi/€': 1234,
+		'telegram-id': '@ssalvatoshi'
+	},
+	{
+		nome: 'Kikot',
+		'satoshi/€': 1250,
+		'telegram-id': '@fb8500'
+	},
+	{
+		nome: 'mars marsarel',
+		'satoshi/€': 2200,
+		'telegram-id': '@marsarel'
+	},
+	{
+		nome: 'Luigi',
+		'satoshi/€': 1538,
+		'telegram-id': '@Luigi_Ang'
+	},
+	{
+		nome: 'robertobipunto',
+		'satoshi/€': 919.25,
+		'telegram-id': '@robertobipunto'
+	},
+	{
+		nome: 'Pindol',
+		'satoshi/€': 1755,
+		'telegram-id': '@Pindol'
 	}
 ];
