@@ -33,7 +33,7 @@ let gController = null;
 						data: gData12,
 						title: '#picco12',
 						subTitle: '(#picco2020)',
-						
+						favicon: 'p12.png',
 						// minValue: 12540,
 						// minValue: 11749.5, // 29 jan 2020
 						// minValue: 9933.44, // 1 aug 2020
@@ -53,7 +53,7 @@ let gController = null;
 						data: gData13,
 						title: '#picco13',
 						subTitle: '(#picco2021)',
-						
+						favicon: 'p13.png',
 						// minValue: 12540,
 						// minValue: 11749.5, // 29 jan 2020
 						// minValue: 9933.44, // 1 aug 2020
@@ -106,7 +106,8 @@ let gController = null;
 				console.log(path);
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
-
+				const favicon = document.getElementById('favicon');
+				favicon.setAttribute("href", self.model.picco [self.model.current.annoGenesi].favicon);
 				const domHeader = self.util.createElement(['div', null, ['header']]);
 				[['h1', {id: 'title', textContent: self.model.picco [self.model.current.annoGenesi].title}],
 				['h2', {id: 'sub-title', textContent: self.model.picco [self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
