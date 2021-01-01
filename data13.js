@@ -94,5 +94,20 @@ const gData13 = [
 		nome: 'Guido [Kos pwnd] D.',
 		'satoshi/€': 42,
 		'telegram-id': '@flandero'
+	},
+	{
+		nome: 'doublesofeverything',
+		'satoshi/€': 731.98,
+		'telegram-id': null
+	},
+	{
+		nome: 'Levin Sintoni',
+		'satoshi/€': 1440,
+		'telegram-id': '@rabber80'
+	},
+	{
+		nome: 'Robin di Loxley',
+		'satoshi/€': 1430,
+		'telegram-id': '@RobindiLoxley'
 	}
 ];
