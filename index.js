@@ -20,17 +20,17 @@ let gController = null;
 				}
 			};
 			self.model = {
-				current:{
+				current: {
 					annoGenesi: null // self.getOrDefault(params, 'picco', '12'),
 				},
-				constants:{
+				constants: {
 					satoshiPerBitcoin: 100000000,
 					columnSatoshiPerBitcoinIndex: 2,
 					defaultAnnoGenesi: 12
 				},
-				picco:{
+				picco: {
 					12: {
-						data: gData12,
+						data: gData12, // eslint-disable-line no-undef
 						title: '#picco12',
 						subTitle: '(#picco2020)',
 						favicon: 'p12.png',
@@ -47,10 +47,10 @@ let gController = null;
 						// minValue: 5473.573586723301, // 17 dec 2020
 						// minValue: 5351.823526830297, // 17 dec 2020
 						// minValue: 4943.938212637793, // 25 dec 2020
-						minValue: 4372.722085088799, // 27 dec 2020
+						minValue: 4372.722085088799 // 27 dec 2020
 					},
 					13: {
-						data: gData13,
+						data: gData13, // eslint-disable-line no-undef
 						title: '#picco13',
 						subTitle: '(#picco2021)',
 						favicon: 'p13.png',
@@ -67,12 +67,12 @@ let gController = null;
 						// minValue: 5473.573586723301, // 17 dec 2020
 						// minValue: 5351.823526830297, // 17 dec 2020
 						// minValue: 4943.938212637793, // 25 dec 2020
-						minValue: 4372.722085088799, // 27 dec 2020
+						minValue: 4372.722085088799 // 27 dec 2020
 					}
-				},
+				}
 
 			};
-			
+
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
 			self.matrixToTable = (header, matrix, applyOnElement) => {
 				const domTable = self.util.createElement(['table']);
@@ -107,20 +107,20 @@ let gController = null;
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
 				const favicon = document.getElementById('favicon');
-				favicon.setAttribute("href", self.model.picco [self.model.current.annoGenesi].favicon);
+				favicon.setAttribute('href', self.model.picco[self.model.current.annoGenesi].favicon);
 				const domHeader = self.util.createElement(['div', null, ['header']]);
-				[['h1', {id: 'title', textContent: self.model.picco [self.model.current.annoGenesi].title}],
-				['h2', {id: 'sub-title', textContent: self.model.picco [self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
-				document.title = self.model.picco [self.model.current.annoGenesi].title;
-				Object.keys (self.model.picco).forEach(key =>{
-					self.model.picco [key].data.sort((a, b) => b['satoshi/€'] - a['satoshi/€']);
+				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
+				['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
+				document.title = self.model.picco[self.model.current.annoGenesi].title;
+				Object.keys(self.model.picco).forEach(key => {
+					self.model.picco[key].data.sort((a, b) => b['satoshi/€'] - a['satoshi/€']);
 				});
 				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
 					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿', 'penalità'],
-					self.jsonToMatrix(self.model.picco [self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]), // eslint-disable-line no-undef
+					self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]), // eslint-disable-line no-undef
 					(row, domElement, i) => {
-						if (row[self.model.constants.columnSatoshiPerBitcoinIndex] > self.model.picco [self.model.current.annoGenesi].minValue) {
+						if (row[self.model.constants.columnSatoshiPerBitcoinIndex] > self.model.picco[self.model.current.annoGenesi].minValue) {
 							const classes = ['lost', 'lost-element'];
 							domElement.classList.add(classes[Number(i === self.model.constants.columnSatoshiPerBitcoinIndex)]);
 						}
