@@ -118,7 +118,7 @@ let gController = null;
 				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
 					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿', 'penalità'],
-					self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]), // eslint-disable-line no-undef
+					self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]),
 					(row, domElement, i) => {
 						if (row[self.model.constants.columnSatoshiPerBitcoinIndex] > self.model.picco[self.model.current.annoGenesi].minValue) {
 							const classes = ['lost', 'lost-element'];
