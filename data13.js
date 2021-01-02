@@ -256,6 +256,11 @@ const gData13 = [
 		'telegram-id': '@MattArms'
 	},
 	{
+		nome: 'Ale Cella',
+		'satoshi/€': 1109,
+		'telegram-id': '@Mazgrim'
+	},
+	{
 		nome: 'President Elect Anonymous',
 		'satoshi/€': NaN,
 		'telegram-id': '@blackswan123'
