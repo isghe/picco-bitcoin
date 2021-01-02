@@ -47,7 +47,8 @@ let gController = null;
 						// minValue: 5473.573586723301, // 17 dec 2020
 						// minValue: 5351.823526830297, // 17 dec 2020
 						// minValue: 4943.938212637793, // 25 dec 2020
-						minValue: 4372.722085088799 // 27 dec 2020
+						// minValue: 4372.722085088799 // 27 dec 2020
+						minValue: 3947.58242157338 // 2 gen 2020
 					},
 					13: {
 						data: gData13, // eslint-disable-line no-undef
@@ -67,7 +68,8 @@ let gController = null;
 						// minValue: 5473.573586723301, // 17 dec 2020
 						// minValue: 5351.823526830297, // 17 dec 2020
 						// minValue: 4943.938212637793, // 25 dec 2020
-						minValue: 4372.722085088799 // 27 dec 2020
+						// minValue: 4372.722085088799 // 27 dec 2020
+						minValue: 3947.58242157338 // 2 gen 2020
 					}
 				}
 
