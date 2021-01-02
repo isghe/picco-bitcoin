@@ -174,5 +174,70 @@ const gData13 = [
 		nome: 'Parseval',
 		'satoshi/€': 1000,
 		'telegram-id': null
+	},
+	{
+		nome: 'Fabio',
+		'satoshi/€': 1629,
+		'telegram-id': '@Imadalek'
+	},
+	{
+		nome: 'Maurizio',
+		'satoshi/€': 1085,
+		'telegram-id': '@mauri456'
+	},
+	{
+		nome: 'Valerio Vaccaro [I don\'t ask or send BTC]',
+		'satoshi/€': 300,
+		'telegram-id': '@valerio_vaccaro'
+	},
+	{
+		nome: 'Giacomgi',
+		'satoshi/€': 834,
+		'telegram-id': '@Giacomgi'
+	},
+	{
+		nome: 'Gianluca Mazza',
+		'satoshi/€': 455,
+		'telegram-id': '@gmazza1989'
+	},
+	{
+		nome: 'Mods',
+		'satoshi/€': 1202,
+		'telegram-id': '@Freeclimber'
+	},
+	{
+		nome: 'Alexb',
+		'satoshi/€': 555,
+		'telegram-id': '@donttrustverif'
+	},
+	{
+		nome: 'M4rc0 ⚡️3m1n4r1',
+		'satoshi/€': 567,
+		'telegram-id': '@Seminella'
+	},
+	{
+		nome: 'Nik',
+		'satoshi/€': 2001,
+		'telegram-id': '@nik7B7'
+	},
+	{
+		nome: '☆OchoCinco☆',
+		'satoshi/€': 2021,
+		'telegram-id': '@JFF623'
+	},
+	{
+		nome: '☆OchoCinco☆',
+		'satoshi/€': 2021,
+		'telegram-id': '@JFF623'
+	},
+	{
+		nome: 'Michele',
+		'satoshi/€': 1823,
+		'telegram-id': '@micheletnt'
+	},
+	{
+		nome: 'President Elect Anonymous',
+		'satoshi/€': NaN,
+		'telegram-id': '@blackswan123'
 	}
 ];
