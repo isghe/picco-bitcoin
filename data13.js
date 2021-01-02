@@ -226,11 +226,6 @@ const gData13 = [
 		'telegram-id': '@JFF623'
 	},
 	{
-		nome: '☆OchoCinco☆',
-		'satoshi/€': 2021,
-		'telegram-id': '@JFF623'
-	},
-	{
 		nome: 'Michele',
 		'satoshi/€': 1823,
 		'telegram-id': '@micheletnt'
