@@ -169,5 +169,10 @@ const gData13 = [
 		nome: 'Manuel',
 		'satoshi/€': 1492,
 		'telegram-id': null
+	},
+	{
+		nome: 'Parseval',
+		'satoshi/€': 1000,
+		'telegram-id': null
 	}
 ];
