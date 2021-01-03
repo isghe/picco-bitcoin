@@ -319,5 +319,25 @@ const gData13 = [
 		nome: 'Lorenzo',
 		'satoshi/€': 294,
 		'telegram-id': '@assghhk'
+	},
+	{
+		nome: 'Francesco',
+		'satoshi/€': 1985,
+		'telegram-id': '@Fra_More'
+	},
+	{
+		nome: 'Daniela Brozzoni 🦄',
+		'satoshi/€': 589,
+		'telegram-id': '@danielabrozzoni'
+	},
+	{
+		nome: 'Simone Albino',
+		'satoshi/€': 2375,
+		'telegram-id': '@Kapras'
+	},
+	{
+		nome: 'Piccolo Piero',
+		'satoshi/€': 1440,
+		'telegram-id': '@nondor'
 	}
 ];
