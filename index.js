@@ -26,7 +26,7 @@ let gController = null;
 				constants: {
 					satoshiPerBitcoin: 100000000,
 					columnSatoshiPerBitcoinIndex: 2,
-					defaultAnnoGenesi: 12
+					defaultAnnoGenesi: 13
 				},
 				picco: {
 					12: {
