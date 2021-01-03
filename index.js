@@ -103,7 +103,7 @@ let gController = null;
 				const domHeader = self.util.createElement(['div', null, ['header']]);
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 				['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
-				document.title = self.model.picco[self.model.current.annoGenesi].title;
+				// document.title = self.model.picco[self.model.current.annoGenesi].title;
 				Object.keys(self.model.picco).forEach(key => {
 					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b['satoshi/€']) - self.infinityIfIsNaN(a['satoshi/€']));
 				});

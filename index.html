@@ -5,7 +5,17 @@
 	<meta name="author" content="Isidoro Ghezzi © 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020">
 	<meta name="viewport" content="initial-scale=1">
 	<link id="favicon" rel='icon' href='p12.png' type='image/png'>
-	<title>#picco12</title>
+	<script>
+		const piccoGetOrDefault = (params, field, defaultValue) => {
+			let ret = params.get(field);
+			if (ret === null) {
+				ret = defaultValue;
+			}
+
+			return ret;
+		};
+		document.write ('<title>#picco'+piccoGetOrDefault (new URL(location).searchParams, 'picco', 12)+'</title>');
+	</script>
 	<link rel="stylesheet" type="text/css" href="index.css" />
 	<script src="data12.js"></script>
 	<script src="data13.js"></script>
