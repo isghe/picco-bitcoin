@@ -58,7 +58,8 @@ let gController = null;
 						title: '#picco13',
 						subTitle: '(#picco2021)',
 						favicon: 'p13.png',
-						minValue: Infinity // pre start
+						// minValue: Infinity // pre start
+						minValue: 3708.813624697732 // 3 gennaio 2020
 					}
 				}
 			};
