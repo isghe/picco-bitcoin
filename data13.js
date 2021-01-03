@@ -296,7 +296,7 @@ const gData13 = [
 		'telegram-id': '@ale_ciri'
 	},
 	{
-		nome: 'Giudo',
+		nome: 'Guido',
 		'satoshi/€': 1640,
 		'telegram-id': '@guidobartu'
 	},
@@ -344,5 +344,10 @@ const gData13 = [
 		nome: 'Piccolo Piero',
 		'satoshi/€': 1440,
 		'telegram-id': '@nondor'
+	},
+	{
+		nome: 'Rw',
+		'satoshi/€': 199,
+		'telegram-id': '@rw13enlib88'
 	}
 ];
