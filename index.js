@@ -52,6 +52,7 @@ let gController = null;
 						// minValue: 3811.9663723574495 // 2 gennaio 2020
 						// minValue: 3689.3167348513884 // 2 gennaio 2020
 						minValue: 3499.909177356848 // 3 gennaio 2020
+						
 					},
 					13: {
 						data: gData13, // eslint-disable-line no-undef
@@ -60,7 +61,8 @@ let gController = null;
 						favicon: 'p13.png',
 						// minValue: Infinity // pre start
 						// minValue: 3708.813624697732 // 3 gennaio 2021
-						minValue: 2551.9676308425705 // 9 febbraio 2021
+						// minValue: 2551.9676308425705 // 9 febbraio 2021
+						minValue: 2329.9899530833222 // 17 febbraio 2021
 					}
 				}
 			};
