@@ -62,7 +62,8 @@ let gController = null;
 						// minValue: Infinity // pre start
 						// minValue: 3708.813624697732 // 3 gennaio 2021
 						// minValue: 2551.9676308425705 // 9 febbraio 2021
-						minValue: 2329.9899530833222 // 17 febbraio 2021
+						// minValue: 2329.9899530833222 // 17 febbraio 2021
+						minValue: 2190.300298932185 // 19 febbraio 2021
 					}
 				}
 			};
