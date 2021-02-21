@@ -33,7 +33,7 @@ const gData13 = [
 	{
 		nome: 'Peanut Butter',
 		'satoshi/€': 1333,
-		'telegram-id': '@sunbimu'
+		'telegram-id': '@PeanutButterrex'
 	},
 	{
 		nome: 'Don Peppe',
