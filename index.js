@@ -28,7 +28,7 @@ let gController = null;
 					columnSatoshiPerBitcoinIndex: 2,
 					defaultAnnoGenesi: 13
 				},
-				picco: gPicco
+				picco: gPicco // eslint-disable-line no-undef
 			};
 
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
