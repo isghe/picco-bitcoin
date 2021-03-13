@@ -267,7 +267,7 @@ const gData13 = [
 	},
 	{
 		nome: 'President Elect Anonymous',
-		'satoshi/€': NaN,
+		'satoshi/€': Number.NaN,
 		'telegram-id': '@blackswan123'
 	},
 	{

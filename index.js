@@ -1,10 +1,9 @@
-/* eslint-disable capitalized-comments */
 let gController = null;
 (function () {
 	'use strict';
 	document.addEventListener('DOMContentLoaded', () => {
 		const ClassController = function (theNow) {
-			const self = this;
+			const self = this; // eslint-disable-line unicorn/no-this-assignment
 			self.util = {
 				createElement(arg) {
 					const ret = document.createElement(arg[0]);
@@ -13,9 +12,11 @@ let gController = null;
 							ret[theProperty] = arg[1][theProperty];
 						});
 					}
+
 					if ((typeof undefined !== typeof arg[2]) && (arg[2] !== null)) {
 						arg[2].forEach(theClass => ret.classList.add(theClass));
 					}
+
 					return ret;
 				}
 			};
@@ -37,8 +38,9 @@ let gController = null;
 				});
 				return domTable;
 			};
+
 			self.convert = value => self.model.constants.satoshiPerBitcoin / value;
-			self.showFloat = value => parseFloat(value).toFixed(2);
+			self.showFloat = value => Number.parseFloat(value).toFixed(2);
 			self.getOrDefault = (params, field, defaultValue) => {
 				let ret = params.get(field);
 				if (ret === null) {
@@ -48,19 +50,19 @@ let gController = null;
 				return ret;
 			};
 
-			self.infinityIfIsNaN = value => [value, Infinity][Number(isNaN(value) === true)];
-
+			// with Number.isNaN instead of isNaN we have different wrong result.
+			self.infinityIfIsNaN = value => [value, Number.POSITIVE_INFINITY][Number(Number.isNaN(Number(value)) === true)];
 			self.show = () => {
 				const url = new URL(location);
 				const path = url.origin + url.pathname;
 				console.log(path);
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
-				const favicon = document.getElementById('favicon');
+				const favicon = document.querySelector('#favicon');
 				favicon.setAttribute('href', self.model.picco[self.model.current.annoGenesi].favicon);
 				const domHeader = self.util.createElement(['div', null, ['header']]);
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
-				['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
+					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				// document.title = self.model.picco[self.model.current.annoGenesi].title;
 				Object.keys(self.model.picco).forEach(key => {
 					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b['satoshi/€']) - self.infinityIfIsNaN(a['satoshi/€']));
@@ -74,21 +76,24 @@ let gController = null;
 							const classes = ['lost', 'lost-element'];
 							domElement.classList.add(classes[Number(i === self.model.constants.columnSatoshiPerBitcoinIndex)]);
 						}
+
 						return domElement;
 					}
 				);
 				const domFooter = self.util.createElement(['div', null, ['footer']]);
 				[
-				['div', {textContent: 'anno genesi ' + self.model.current.annoGenesi}],
-				['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
-				['div', {textContent: theNow}],
-				['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
-				['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]].forEach(dom => domFooter.append(self.util.createElement(dom)));
+					['div', {textContent: 'anno genesi ' + self.model.current.annoGenesi}],
+					['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
+					['div', {textContent: theNow}],
+					['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
+					['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]
+				].forEach(dom => domFooter.append(self.util.createElement(dom)));
 				const domContainer = self.util.createElement(['div', null, ['container']]);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
 			};
 		};
+
 		gController = new ClassController(new Date());
 		gController.show();
 	});
