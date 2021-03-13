@@ -19,17 +19,7 @@ let gController = null;
 					return ret;
 				}
 			};
-			self.model = {
-				current: {
-					annoGenesi: null // self.getOrDefault(params, 'picco', '12'),
-				},
-				constants: {
-					satoshiPerBitcoin: 100000000,
-					columnSatoshiPerBitcoinIndex: 2,
-					defaultAnnoGenesi: 13
-				},
-				picco: gPicco // eslint-disable-line no-undef
-			};
+			self.model = gModel; // eslint-disable-line no-undef
 
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
 			self.matrixToTable = (header, matrix, applyOnElement) => {

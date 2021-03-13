@@ -3,13 +3,18 @@
     "test": "xo"
   },
   "devDependencies": {
-    "xo": "^0.18.2"
+    "xo": "^0.38.2"
   },
   "xo": {
     "esnext": true,
     "space": false,
+    "semicolon": true,
     "rules": {
-      "no-alert": 0
+      "no-alert": 0,
+      "unicorn/string-content": 0,
+      "unicorn/prevent-abbreviations": 0,
+      "eslint-comments/no-unused-disable": 0,
+      "capitalized-comments": 0
     },
     "envs": [
       "browser",
