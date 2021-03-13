@@ -123,7 +123,7 @@ const gData12 = [
 	},
 	{
 		nome: 'Marky',
-		'satoshi/€': 2250.50,
+		'satoshi/€': 2250.5,
 		'telegram-id': '@bacco1989'
 	},
 	{
@@ -259,7 +259,7 @@ const gData12 = [
 	},
 	{
 		nome: 'Alekos Filini',
-		'satoshi/€': 1440.50,
+		'satoshi/€': 1440.5,
 		'telegram-id': '@afilini'
 	},
 	{
