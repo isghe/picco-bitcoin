@@ -36,6 +36,7 @@ const gPicco = {
 		// minValue: 2190.300298932185 // 19 febbraio 2021
 		// minValue: 2080.044263341924 // 21 febbraio 2021
 		// minValue: 1983.4544199199122 // 13 marzo 2021
-		minValue: 1826.7375927982696 // 19 0ttobre 2021 - 21:20
+		// minValue: 1826.7375927982696 // 19 0ttobre 2021 - 21:20
+		minValue: 1821.6323210036758 // 19 ottobre 2021 - 21:33
 	}
 };
