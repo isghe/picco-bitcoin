@@ -67,10 +67,12 @@ let gController = null;
 				Object.keys(self.model.picco).forEach(key => {
 					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b['satoshi/€']) - self.infinityIfIsNaN(a['satoshi/€']));
 				});
-				const navigators = Object.keys (self.model.picco).map ((key)=>{
-					return ['a', {href:path+'?picco='+ key, textContent: '#picco' + key}, ['navigator']];
+				const navigators = Object.keys(self.model.picco).map(key => {
+					return ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']];
 				});
-				const $navigators = navigators.map ((args)=>{return self.util.createElement(args)});
+				const $navigators = navigators.map(args => {
+					return self.util.createElement(args);
+				});
 
 				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
@@ -93,7 +95,9 @@ let gController = null;
 					['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
 					['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]
 				].forEach(dom => domFooter.append(self.util.createElement(dom)));
-				$navigators.forEach(($navigator) => {domFooter.append ($navigator)});
+				$navigators.forEach($navigator => {
+					domFooter.append($navigator);
+				});
 				const domContainer = self.util.createElement(['div', null, ['container']]);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
