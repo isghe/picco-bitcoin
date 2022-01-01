@@ -16,6 +16,11 @@ const gData14 = [
 		'telegram-id': '@digitalkey'
 	},
 	{
+		nome: 'Alessandro Bitcoin Terminal',
+		'satoshi/€': 900,
+		'telegram-id': '@thenewdaspolo'
+	},
+	{
 		nome: 'Salvatoshi #FreeAssange #FreeSnowden #FreeRoss',
 		'satoshi/€': 333,
 		'telegram-id': '@ssalvatoshi'
