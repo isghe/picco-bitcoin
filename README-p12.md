@@ -86,7 +86,7 @@ I firmatari attuali della propria stima sono:
 Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere, per eliminazione.
 
 ### NON_PREMIO (aggiunto in #picco14)
-Pur non essendo previsto alcun premio per il vincitore, in ogni modo il `NON_PREMIO` è unico ed indivisibile… mica siamo alle olimpiadi di Tokyo 2020, in cui nel salto in alto, sono stati moltiplicati gli ori!)
+Pur non essendo previsto alcun premio per il vincitore, in ogni modo il `NON_PREMIO` è unico ed indivisibile… (mica siamo alle olimpiadi di Tokyo 2020, in cui nel salto in alto, sono stati moltiplicati gli ori!)
 
 ## Dettagli tecnici
 https://isghe.github.io/picco-bitcoin/ è una pagina web html statica. Il codice in `index.html` è il codice minimalista `html`, per caricare i file `p12.png` (l'icona che appare nel browser), gli stili in `index.css`, il database dei concorrenti in `data12.js` e finalmente il codice JavaScript in `index.js`.
