@@ -1,8 +1,38 @@
 /* eslint-disable no-unused-vars */
 const gData14 = [
 	{
-		nome: 'Isidoro Ghezzi ⚡️',
+		nome: 'Isidoro Ghezzi 🇮🇹⚡️',
 		'satoshi/€': 10 * Math.sqrt(1000),
 		'telegram-id': '@isghe_home'
+	},
+	{
+		nome: 'Dan',
+		'satoshi/€': 992,
+		'telegram-id': '@daniel_exploit'
+	},
+	{
+		nome: 'digitalkey',
+		'satoshi/€': 666,
+		'telegram-id': '@digitalkey'
+	},
+	{
+		nome: 'Salvatoshi #FreeAssange #FreeSnowden #FreeRoss',
+		'satoshi/€': 333,
+		'telegram-id': '@ssalvatoshi'
+	},
+	{
+		nome: 'Davide Z',
+		'satoshi/€': 684,
+		'telegram-id': '@dadezz'
+	},
+	{
+		nome: 'Francesco Lupetti',
+		'satoshi/€': 744,
+		'telegram-id': '@Black_and_Gold'
+	},
+	{
+		nome: '𝓢𝓪𝓽𝓸𝓼𝓱𝓲฿',
+		'satoshi/€': 800,
+		'telegram-id': '@mooramask'
 	}
 ];
