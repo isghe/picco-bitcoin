@@ -64,5 +64,10 @@ const gData14 = [
 		nome: 'Pindol',
 		'satoshi/€': 850,
 		'telegram-id': '@Pindol'
+	},
+	{
+		nome: 'Kikot',
+		'satoshi/€': 775,
+		'telegram-id': '@fb8500'
 	},	
 ];
