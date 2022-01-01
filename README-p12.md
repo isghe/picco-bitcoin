@@ -1,25 +1,27 @@
 # #picco12
 ![#p12](p12.png)
 
-* [URL](#url)
-* [Finalità](#finalità)
-* [Storia](#storia)
-* [Edizione #picco12](#edizione-picco12)
-* [Lingua ufficiale](#lingua-ufficiale)
-* [Rischi](#rischi)
-* [Come partecipare](#come-partecipare)
-* [Prezzo partecipazione](#prezzo-partecipazione)
-* [Partecipazione anonima](#partecipazione-anonima)
-* [Partecipazione firmata](#partecipazione-firmata)
-* [Premio per il vincitore](#premio-per-il-vincitore)
-* [Dettagli tecnici](#dettagli-tecnici)
-	* [Vanilla JS](#vanilla-js)
-	* [Database dei concorrenti](#database-dei-concorrenti)
-	* [Picco](#picco)
-	* [Linter xo](#linter-xo)
-	* [Commit firmate](#commit-firmate)
-	* [Certificazione temporale - Opentimestamps](#certificazione-temporale-opentimestamps)
-* [Donazioni](#donazioni)
+- [#picco12](#picco12)
+	- [URL](#url)
+	- [Finalità](#finalità)
+	- [Storia](#storia)
+	- [Edizione `#picco12`](#edizione-picco12)
+	- [Lingua ufficiale](#lingua-ufficiale)
+	- [Rischi](#rischi)
+	- [Come partecipare](#come-partecipare)
+	- [Prezzo partecipazione](#prezzo-partecipazione)
+	- [Partecipazione anonima](#partecipazione-anonima)
+	- [Partecipazione firmata](#partecipazione-firmata)
+	- [Premio per il vincitore](#premio-per-il-vincitore)
+		- [NON_PREMIO (aggiunto in #picco14)](#non_premio-aggiunto-in-picco14)
+	- [Dettagli tecnici](#dettagli-tecnici)
+		- [Vanilla-JS](#vanilla-js)
+		- [Database dei concorrenti](#database-dei-concorrenti)
+		- [Picco](#picco)
+		- [Linter xo](#linter-xo)
+		- [Commit firmate](#commit-firmate)
+		- [Certificazione temporale - Opentimestamps](#certificazione-temporale---opentimestamps)
+	- [Donazioni](#donazioni)
 
 ## URL
 * Repository su GitHub: https://github.com/isghe/picco-bitcoin
@@ -82,6 +84,9 @@ I firmatari attuali della propria stima sono:
 
 ## Premio per il vincitore
 Non è previsto alcun premio, giacché in questo gioco al massacro, tutti i partecipanti sperano di perdere, per eliminazione.
+
+### NON_PREMIO (aggiunto in #picco14)
+Pur non essendo previsto alcun premio per il vincitore, in ogni modo il `NON_PREMIO` è unico ed indivisibile… mica siamo alle olimpiadi di Tokyo 2020, in cui nel salto con l'asta, sono stati moltiplicati gli ori!)
 
 ## Dettagli tecnici
 https://isghe.github.io/picco-bitcoin/ è una pagina web html statica. Il codice in `index.html` è il codice minimalista `html`, per caricare i file `p12.png` (l'icona che appare nel browser), gli stili in `index.css`, il database dei concorrenti in `data12.js` e finalmente il codice JavaScript in `index.js`.
