@@ -40,5 +40,12 @@ const gPicco = {
 		// minValue: 1821.6323210036758 // 19 ottobre 2021 - 21:33
 		// minValue: 1740.9688979388322 // 20 ottobre 2021 - 20:03
 		minValue: 1681.895954216101 // 10 novembre 2021 - 15:36
+	},
+	14: {
+		data: gData14, // eslint-disable-line no-undef
+		title: '#picco14',
+		subTitle: '(#picco2022)',
+		favicon: 'p14.png',
+		minValue: 100000000000 // sort of infinite - before 3 jan 2022
 	}
 };
