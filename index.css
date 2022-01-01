@@ -140,3 +140,7 @@ a{
 	text-decoration-line: line-through;
 	background: #404040;
 }
+
+.navigator{
+	margin: 4px;
+}
