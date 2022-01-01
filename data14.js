@@ -34,5 +34,20 @@ const gData14 = [
 		nome: '𝓢𝓪𝓽𝓸𝓼𝓱𝓲฿',
 		'satoshi/€': 800,
 		'telegram-id': '@mooramask'
-	}
+	},
+	{
+		nome: 'Andrea zyx',
+		'satoshi/€': 2325,
+		'telegram-id': '@ndreazyx'
+	},
+	{
+		nome: 'MB',
+		'satoshi/€': 568,
+		'telegram-id': '@mbzx48'
+	},
+	{
+		nome: 'Valerio Vaccaro [I don\'t ask or send BTC]',
+		'satoshi/€': 300,
+		'telegram-id': '@valerio_vaccaro'
+	},
 ];
