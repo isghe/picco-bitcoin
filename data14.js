@@ -119,5 +119,140 @@ const gData14 = [
 		nome: 'Manuel',
 		'satoshi/€': 1050,
 		'telegram-id': '@nondiremanuel'
+	},
+	{
+		nome: 'Franco Ferrari',
+		'satoshi/€': 450.45,
+		'telegram-id': '@franco_leroy'
+	},
+	{
+		nome: 'X. P.',
+		'satoshi/€': 999,
+		'telegram-id': '@xp001'
+	},
+	{
+		nome: 'Bruce Ketta ⛧',
+		'satoshi/€': 469,
+		'telegram-id': '@bruschettino'
+	},
+	{
+		nome: 'Andrea Bertinotti Bitcoin Italia',
+		'satoshi/€': 666,
+		'telegram-id': '@Andrea_NNA'
+	},
+	{
+		nome: 'Giacomgi',
+		'satoshi/€': 456,
+		'telegram-id': '@Giacomgi'
+	},
+	{
+		nome: 'Antonio L',
+		'satoshi/€': 427,
+		'telegram-id': '@CryptAnto'
+	},
+	{
+		nome: 'Fausto Barosco',
+		'satoshi/€': 750,
+		'telegram-id': '@VivaJohnGalt'
+	},
+	{
+		nome: 'robertobipunto',
+		'satoshi/€': 919.25,
+		'telegram-id': '@robertobipunto'
+	},
+	{
+		nome: 'Mods',
+		'satoshi/€': 1202,
+		'telegram-id': '@Freeclimber'
+	},
+	{
+		nome: 'BeRn',
+		'satoshi/€': 294,
+		'telegram-id': '@MrBeRn70'
+	},
+	{
+		nome: 'Luca_Despe',
+		'satoshi/€': 1001,
+		'telegram-id': '@Luca_Despe'
+	},
+	{
+		nome: 'Roberto',
+		'satoshi/€': 695,
+		'telegram-id': '@No_vairus'
+	},
+	{
+		nome: 'Marco Pallini',
+		'satoshi/€': 630,
+		'telegram-id': '@boxerissimo'
+	},
+	{
+		nome: 'Scannata',
+		'satoshi/€': 472,
+		'telegram-id': '@scannataaia'
+	},
+	{
+		nome: 'M4rc0 53m1n4r1',
+		'satoshi/€': 444,
+		'telegram-id': '@Seminella'
+	},
+	{
+		nome: 'Kiocla',
+		'satoshi/€': 550,
+		'telegram-id': '@iClaudietto'
+	},
+	{
+		nome: 'Ma͛rtiño 🫖',
+		'satoshi/€': 1125,
+		'telegram-id': '@martinoz'
+	},
+	{
+		nome: 'A',
+		'satoshi/€': 580,
+		'telegram-id': '@bc_guts'
+	},
+	{
+		nome: 'Tolo',
+		'satoshi/€': 1007,
+		'telegram-id': '@TanTanTaTaTan'
+	},
+	{
+		nome: 'Gepes',
+		'satoshi/€': 893,
+		'telegram-id': '@Gepes'
+	},
+	{
+		nome: 'Attilio',
+		'satoshi/€': 750,
+		'telegram-id': '@Attilakite'
+	},
+	{
+		nome: 'fc',
+		'satoshi/€': 600,
+		'telegram-id': '@fra2243'
+	},
+	{
+		nome: 'Kataku',
+		'satoshi/€': 476,
+		'telegram-id': '@BhoRoo'
+	},
+	{
+		nome: 'mordom',
+		'satoshi/€': 1178,
+		'telegram-id': '@mordom'
+	},
+	{
+		nome: 'Luca Venturini',
+		'satoshi/€': 399,
+		'telegram-id': '@Lucayepa'
+	},
+	{
+		nome: 'Guido',
+		'satoshi/€': 730,
+		'telegram-id': '@guidodiso'
+	},
+	{
+		nome: 'Leo',
+		'satoshi/€': 828,
+		'telegram-id': '@ilpaleo'
 	}
 ];
