@@ -43,7 +43,7 @@ const gData14 = [
 	{
 		nome: 'Andrea zyx',
 		'satoshi/€': 2325,
-		'telegram-id': '@ndreazyx'
+		'telegram-id': '@andreazyx'
 	},
 	{
 		nome: 'MB',
