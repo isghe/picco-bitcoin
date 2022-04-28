@@ -46,6 +46,7 @@ const gPicco = {
 		title: '#picco14',
 		subTitle: '(#picco2022)',
 		favicon: 'p14.png',
-		minValue: 100000000000 // sort of infinite - before 3 jan 2022
+		// minValue: 100000000000 // sort of infinite - before 3 jan 2022
+		minValue: 2293.157218858925 // 20 marzo 2022
 	}
 };
