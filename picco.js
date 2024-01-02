@@ -53,7 +53,7 @@ const gPicco = {
 		data: gData15, // eslint-disable-line no-undef
 		title: '#picco15',
 		subTitle: '(#picco2023)',
-		favicon: '',
+		favicon: 'p15.png',
 		minValue: 2407.325781 // 8 Dicembre 2023
 	}
 };
