@@ -6,7 +6,7 @@ const gModel = {
 	constants: {
 		satoshiPerBitcoin: 100000000,
 		columnSatoshiPerBitcoinIndex: 2,
-		defaultAnnoGenesi: 14
+		defaultAnnoGenesi: 15
 	},
 	picco: gPicco // eslint-disable-line no-undef
 };
