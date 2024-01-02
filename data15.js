@@ -148,7 +148,7 @@ const gData15 = [
     {
 		nome: 'Giuliano A',
 		'satoshi/€': 684,
-		'telegram-id': '@giulianoassoggio'
+		'telegram-id': '@giulianoassaggio'
 	},
     {
 		nome: 'Account Eliminato',
