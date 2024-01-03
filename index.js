@@ -67,12 +67,8 @@ let gController = null;
 				Object.keys(self.model.picco).forEach(key => {
 					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b['satoshi/€']) - self.infinityIfIsNaN(a['satoshi/€']));
 				});
-				const navigators = Object.keys(self.model.picco).map(key => {
-					return ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']];
-				});
-				const $navigators = navigators.map(args => {
-					return self.util.createElement(args);
-				});
+				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
+				const $navigators = navigators.map(args => self.util.createElement(args));
 
 				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
