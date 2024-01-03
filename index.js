@@ -18,7 +18,7 @@ let gController = null;
 					}
 
 					return ret;
-				}
+				},
 			};
 			self.model = gModel; // eslint-disable-line no-undef
 
@@ -81,7 +81,7 @@ let gController = null;
 						}
 
 						return domElement;
-					}
+					},
 				);
 				const domFooter = self.util.createElement(['div', null, ['footer']]);
 				[
@@ -89,7 +89,7 @@ let gController = null;
 					['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
 					['div', {textContent: theNow}],
 					['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
-					['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}]
+					['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}],
 				].forEach(dom => domFooter.append(self.util.createElement(dom)));
 				$navigators.forEach($navigator => {
 					domFooter.append($navigator);

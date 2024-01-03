@@ -22,7 +22,7 @@ const gPicco = {
 		// minValue: 3947.58242157338 // 2 gen 2020
 		// minValue: 3811.9663723574495 // 2 gennaio 2020
 		// minValue: 3689.3167348513884 // 2 gennaio 2020
-		minValue: 3499.909177356848 // 3 gennaio 2020
+		minValue: 3499.909177356848, // 3 gennaio 2020
 	},
 	13: {
 		data: gData13, // eslint-disable-line no-undef
@@ -39,7 +39,7 @@ const gPicco = {
 		// minValue: 1826.7375927982696 // 19 0ttobre 2021 - 21:20
 		// minValue: 1821.6323210036758 // 19 ottobre 2021 - 21:33
 		// minValue: 1740.9688979388322 // 20 ottobre 2021 - 20:03
-		minValue: 1681.895954216101 // 10 novembre 2021 - 15:36
+		minValue: 1681.895954216101, // 10 novembre 2021 - 15:36
 	},
 	14: {
 		data: gData14, // eslint-disable-line no-undef
@@ -47,13 +47,13 @@ const gPicco = {
 		subTitle: '(#picco2022)',
 		favicon: 'p14.png',
 		// minValue: 100000000000 // sort of infinite - before 3 jan 2022
-		minValue: 2293.157218858925 // 20 marzo 2022
+		minValue: 2293.157218858925, // 20 marzo 2022
 	},
 	15: {
 		data: gData15, // eslint-disable-line no-undef
 		title: '#picco15',
 		subTitle: '(#picco2023)',
 		favicon: 'p15.png',
-		minValue: 2407.325781 // 8 Dicembre 2023
-	}
+		minValue: 2407.325781, // 8 Dicembre 2023
+	},
 };
