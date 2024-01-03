@@ -1,4 +1,4 @@
-let gController = null;
+let gController = null; // gController useful just for easy debug
 (function () {
 	'use strict';
 	document.addEventListener('DOMContentLoaded', () => {
