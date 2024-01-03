@@ -59,7 +59,7 @@ let gController = null; // gController useful just for easy debug
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
 				const favicon = document.querySelector('#favicon');
-				favicon.setAttribute('href', 'favicons/'+self.model.picco[self.model.current.annoGenesi].favicon);
+				favicon.setAttribute('href', 'favicons/' + self.model.picco[self.model.current.annoGenesi].favicon);
 				const domHeader = self.util.createElement(['div', null, ['header']]);
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
