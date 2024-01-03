@@ -65,14 +65,14 @@ let gController = null; // gController useful just for easy debug
 					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				// document.title = self.model.picco[self.model.current.annoGenesi].title;
 				Object.keys(self.model.picco).forEach(key => {
-					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b['satoshi/€']) - self.infinityIfIsNaN(a['satoshi/€']));
+					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
 				});
 				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
 				const $navigators = navigators.map(args => self.util.createElement(args));
 
 				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
-					['indice', 'nome', 'satoshi/€', 'telegram-id', '€/₿', 'penalità'],
+					['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'],
 					self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]),
 					(row, domElement, i) => {
 						if (self.infinityIfIsNaN(row[self.model.constants.columnSatoshiPerBitcoinIndex]) > self.model.picco[self.model.current.annoGenesi].minValue) {
