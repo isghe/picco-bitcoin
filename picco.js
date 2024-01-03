@@ -56,4 +56,11 @@ const gPicco = {
 		favicon: 'p15.png',
 		minValue: 2407.325781, // 8 Dicembre 2023
 	},
+	16: {
+		data: gData16, // eslint-disable-line no-undef
+		title: '#picco16',
+		subTitle: '(#picco2024)',
+		favicon: 'p16.png',
+		minValue: 100000000000, // sort of infinite - before 3 jan 2024
+	},
 };

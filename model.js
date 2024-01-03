@@ -7,7 +7,7 @@ const gModel = {
 		satoshiPerBitcoin: 100000000,
 		columnSatoshiPerBitcoinIndex: 2,
 		fieldSatoshiEuro: 'satoshi/€',
-		defaultAnnoGenesi: 15,
+		defaultAnnoGenesi: 16,
 	},
 	picco: gPicco, // eslint-disable-line no-undef
 };
