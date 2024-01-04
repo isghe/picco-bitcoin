@@ -64,9 +64,7 @@ let gController = null; // gController useful just for easy debug
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				// document.title = self.model.picco[self.model.current.annoGenesi].title;
-				Object.keys(self.model.picco).forEach(key => {
-					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
-				});
+				self.model.picco[self.model.current.annoGenesi].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
 				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
 				const $navigators = navigators.map(args => self.util.createElement(args));
 
