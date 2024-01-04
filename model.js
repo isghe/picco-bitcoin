@@ -8,6 +8,8 @@ const gModel = {
 		columnSatoshiPerBitcoinIndex: 2,
 		fieldSatoshiEuro: 'satoshi/€',
 		defaultAnnoGenesi: 16,
+		p2pkh: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck',
+		repository: 'https://github.com/isghe/picco-bitcoin',
 	},
 	picco: gPicco, // eslint-disable-line no-undef
 };
