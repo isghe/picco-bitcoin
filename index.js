@@ -64,13 +64,9 @@ let gController = null; // gController useful just for easy debug
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				// document.title = self.model.picco[self.model.current.annoGenesi].title;
-				Object.keys(self.model.picco).forEach(key => {
-					self.model.picco[key].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
-				});
+				self.model.picco[self.model.current.annoGenesi].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
 				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
-				const $navigators = navigators.map(args => self.util.createElement(args));
 
-				// gData12.sort((a, b) => b['satoshi/€'] - a['satoshi/€']); // eslint-disable-line no-undef
 				const domMatrix = self.matrixToTable(
 					['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'],
 					self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]),
@@ -88,15 +84,14 @@ let gController = null; // gController useful just for easy debug
 					['div', {textContent: 'anno genesi ' + self.model.current.annoGenesi}],
 					['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
 					['div', {textContent: theNow}],
-					['a', {href: 'https://github.com/isghe/picco-bitcoin', textContent: 'GitHub: picco-bitcoin'}],
-					['div', {textContent: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck'}],
-				].forEach(dom => domFooter.append(self.util.createElement(dom)));
-				$navigators.forEach($navigator => {
-					domFooter.append($navigator);
-				});
+					['a', {textContent: 'GitHub: picco-bitcoin', href: self.model.constants.repository}],
+					['div', {textContent: self.model.constants.p2pkh}],
+				].concat(navigators)
+					.concat([['h1', {textContent: '#p' + self.model.current.annoGenesi}]])
+					.forEach(dom => domFooter.append(self.util.createElement(dom)));
+
 				const domContainer = self.util.createElement(['div', null, ['container']]);
-				const domPX = self.util.createElement(['h1', {textContent: '#p' + self.model.current.annoGenesi}]);
-				[domHeader, domMatrix, domFooter, domPX].forEach(dom => domContainer.append(dom));
+				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
 			};
 		};
