@@ -135,7 +135,7 @@ a{
 	text-align: center;
 }
 
-.penalita{
+.penalita_deprecated{
 	color: red;
 	text-decoration-line: line-through;
 	background: #404040;
