@@ -65,6 +65,6 @@ const gPicco = {
 		// minValue: 2445.420656, // 4 gennaio 2024
 		// minValue: 2236.811702, // 11 gennaio 2024
 		// minValue: 1910.8401964343723, // 27 febbraio 2024
-		minValue: 1500.01, // 13 marzo 2024
+		minValue: 1483.7015385984955, // 13 marzo 2024
 	},
 };
