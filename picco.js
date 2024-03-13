@@ -64,6 +64,7 @@ const gPicco = {
 		// minValue: 100000000000, // sort of infinite - before 3 jan 2024
 		// minValue: 2445.420656, // 4 gennaio 2024
 		// minValue: 2236.811702, // 11 gennaio 2024
-		minValue: 1910.8401964343723, // 27 febbraio 2024
+		// minValue: 1910.8401964343723, // 27 febbraio 2024
+		minValue: 1500.01, // 13 marzo 2024
 	},
 };
