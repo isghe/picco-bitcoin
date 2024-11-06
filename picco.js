@@ -65,7 +65,8 @@ const gPicco = {
 		// minValue: 2445.420656, // 4 gennaio 2024
 		// minValue: 2236.811702, // 11 gennaio 2024
 		// minValue: 1910.8401964343723, // 27 febbraio 2024
-		minValue: 1483.4814342298507, // 13 marzo 2024
-		// minValue: 1447.00 - 0.01, // TODO
+		// minValue: 1483.4814342298507, // 13 marzo 2024
+		minValue: 1422.499388325263 // 6 novembre 2024, https://opentimestamps.org/
+		// minValue: 1312.00 - 0.01, // TODO
 	},
 };
