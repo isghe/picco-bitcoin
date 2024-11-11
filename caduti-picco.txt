@@ -128,3 +128,11 @@ https://isghe.github.io/picco-bitcoin/
 #picco16 caduto @elleelle69 a 1447.00 SATOSHI/€
 prossimo in lista @al_radionov a 1312.00 SATOSHI/€
 https://isghe.github.io/picco-bitcoin/
+
+11 noveebre 2024
+#picco16 caduti a #strascico
+* @al_radionov a 1312.00 SATOSHI/€
+* @Fonzarelliii a 1250.00 SATOSHI/€
+* @bc_guts a 1250.00 SATOSHI/€
+https://isghe.github.io/picco-bitcoin/
+https://github.com/isghe/picco-bitcoin/pull/96
