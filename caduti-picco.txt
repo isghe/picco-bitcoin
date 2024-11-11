@@ -134,5 +134,9 @@ https://isghe.github.io/picco-bitcoin/
 * @al_radionov a 1312.00 SATOSHI/€
 * @Fonzarelliii a 1250.00 SATOSHI/€
 * @bc_guts a 1250.00 SATOSHI/€
+
+prossimo in lista:
+* @damianobo a 1215.00 SATOSHI/€
+
 https://isghe.github.io/picco-bitcoin/
 https://github.com/isghe/picco-bitcoin/pull/96
