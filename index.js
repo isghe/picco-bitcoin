@@ -91,6 +91,7 @@ let gController = null; // gController useful just for easy debug
 					.forEach(dom => domFooter.append(self.util.createElement(dom)));
 
 				const domContainer = self.util.createElement(['div', null, ['container']]);
+				// domContainer.append ([domHeader, domMatrix, domFooter]);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
 			};
