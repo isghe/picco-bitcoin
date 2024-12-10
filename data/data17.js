@@ -37,9 +37,8 @@ const gData17 = [
 		'telegram-id': '@notALEXsmith',
 	},
 	{
-		nome: 'Giacomo',
+		nome: 'Giacomo ₿',
 		'satoshi/€': 638,
-		'telegram-id': '',
 	},
 	{
 		nome: 'Francesco Lupetti',
@@ -61,4 +60,19 @@ const gData17 = [
 		'satoshi/€': 526,
 		'telegram-id': '@Effeci11',
 	},
+	{
+		nome: 'Riccardo',
+		'satoshi/€': 293,
+		'telegram-id': '@mrm3210',
+	},
+	{
+		nome: 'm410',
+		'satoshi/€': 1,
+		'telegram-id': '@Uzer0000',
+	},
+	{
+		nome: '₿-ready',
+		'satoshi/€': 420,
+		'telegram-id': '@biready',
+	}
 ];
