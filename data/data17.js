@@ -99,5 +99,10 @@ const gData17 = [
 		nome: 'Luca Merlo',
 		'satoshi/€': 333,
 		'telegram-id': '@Lucamerlo',
+	},
+	{
+		nome: 'Andrea S. ⚡️🔑',
+		'satoshi/€': 437,
+		'telegram-id': '@LordStapy',
 	}
 ];
