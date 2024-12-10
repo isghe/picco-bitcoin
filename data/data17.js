@@ -74,5 +74,30 @@ const gData17 = [
 		nome: '₿-ready',
 		'satoshi/€': 420,
 		'telegram-id': '@biready',
+	},
+	{
+		nome: 'Luca 🇸🇻',
+		'satoshi/€': 800,
+		'telegram-id': '@lit3block',
+	},
+	{
+		nome: 'PAC-MAN',
+		'satoshi/€': 591,
+		'telegram-id': '@DCA69',
+	},
+	{
+		nome: 'Cisco Kid',
+		'satoshi/€': 555,
+		'telegram-id': '@Cisco_Kid80',
+	},
+	{
+		nome: '₿ Fede',
+		'satoshi/€': 821,
+		'telegram-id': '@bitfede',
+	},
+	{
+		nome: 'Luca Merlo',
+		'satoshi/€': 333,
+		'telegram-id': '@Lucamerlo',
 	}
 ];
