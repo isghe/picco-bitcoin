@@ -71,7 +71,8 @@ const gPicco = {
 		// minValue: 1208.9157536834152 // 11 novembre 2024, 23:12
 		// minValue: 1191.4831355689766 // 12 novembre 2024, 00:49
 		// minValue: 1110.5232741246743 // 20 novembre 2024, 20:19
-		minValue: 1079.1629709831423, // 21 novembre 2024, 08:39
+		// minValue: 1079.1629709831423 // 21 novembre 2024, 08:39
+		minValue: 1001.6126966028002 // 16 dicembre 2024, 01.13
 	},
 	17: {
 		data: gData17, // eslint-disable-line no-undef
@@ -88,6 +89,7 @@ const gPicco = {
 		// minValue: 1208.9157536834152 // 11 novembre 2024, 23:12
 		// minValue: 1191.4831355689766 // 12 novembre 2024, 00:49
 		// minValue: 1110.5232741246743 // 20 novembre 2024, 20:19
-		minValue: 1079.1629709831423 // 21 novembre 2024, 08:39
+		// minValue: 1079.1629709831423 // 21 novembre 2024, 08:39
+		minValue: 1001.6126966028002 // 16 dicembre 2024, 01.13
 	},
 };
