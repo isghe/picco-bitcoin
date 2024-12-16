@@ -7,6 +7,11 @@ const gData17 = [
 		'telegram-id': '@isghe_home',
 	},
 	{
+		nome: 'Andros',
+		'satoshi/€': 800,
+		'telegram-id': '@Androsidas',
+	},
+	{
 		nome: 'Pindol',
 		'satoshi/€': 400,
 		'telegram-id': '@Pindol',
