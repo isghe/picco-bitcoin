@@ -59,13 +59,14 @@ let gController = null; // gController useful just for easy debug
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
 				const favicon = document.querySelector('#favicon');
+				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
+				try{
 				favicon.setAttribute('href', 'favicons/' + self.model.picco[self.model.current.annoGenesi].favicon);
 				const domHeader = self.util.createElement(['div', null, ['header']]);
 				[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 					['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => domHeader.append(self.util.createElement(dom)));
 				// document.title = self.model.picco[self.model.current.annoGenesi].title;
 				self.model.picco[self.model.current.annoGenesi].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
-				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
 
 				const domMatrix = self.matrixToTable(
 					['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'],
@@ -91,8 +92,19 @@ let gController = null; // gController useful just for easy debug
 					.forEach(dom => domFooter.append(self.util.createElement(dom)));
 
 				const domContainer = self.util.createElement(['div', null, ['container']]);
+				// domContainer.append ([domHeader, domMatrix, domFooter]);
 				[domHeader, domMatrix, domFooter].forEach(dom => domContainer.append(dom));
 				document.body.append(domContainer);
+				}
+				catch (error){
+					// alert (error);
+					const $error = self.util.createElement(['div', {textContent: error}])
+					const $h1 = self.util.createElement(['h1', {textContent: '#p' + self.model.current.annoGenesi}])
+					const domContainer = self.util.createElement(['div', null, ['container']]);
+					domContainer.append ($h1);
+					domContainer.append ($error);
+					document.body.append(domContainer);
+				}
 			};
 		};
 
