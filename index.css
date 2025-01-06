@@ -83,7 +83,10 @@ th{
 
 .col_1{
 	color: green;
-	text-align: center;
+    text-align: center;
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .col_2{
 	color:#00ff00;
@@ -93,6 +96,9 @@ th{
 .col_3{
 	color: cyan;
 	text-align: center;
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .col_4{
