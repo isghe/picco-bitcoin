@@ -7,7 +7,7 @@ const gModel = {
 		satoshiPerBitcoin: 100000000,
 		columnSatoshiPerBitcoinIndex: 2,
 		fieldSatoshiEuro: 'satoshi/€',
-		defaultAnnoGenesi: 16,
+		defaultAnnoGenesi: 17,
 		p2pkh: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck',
 		repository: 'https://github.com/isghe/picco-bitcoin',
 	},
