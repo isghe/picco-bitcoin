@@ -87,6 +87,7 @@ th{
     max-width: 10ch;
     overflow: hidden;
     text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .col_2{
 	color:#00ff00;
@@ -99,6 +100,7 @@ th{
     max-width: 10ch;
     overflow: hidden;
     text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .col_4{
