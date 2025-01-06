@@ -84,7 +84,7 @@ th{
 .col_1{
 	color: green;
     text-align: center;
-    max-width: 10ch;
+    max-width: 24ch;
     overflow: hidden;
     text-overflow: ellipsis;
 	white-space: nowrap;
