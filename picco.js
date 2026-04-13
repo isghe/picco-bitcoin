@@ -94,4 +94,12 @@ const gPicco = {
 		// minValue: 1001.6126966028002 // 16 dicembre 2024, 01.13
 		minValue: 989.3376117568133 // 16 dicembre 2024, 01.58
 	},
+	18: {
+		data: gData18, // eslint-disable-line no-undef
+		title: '#picco18',
+		subTitle: '(#picco2026)',
+		favicon: 'p18.png',
+		// minValue: 100000000000, // sort of infinite - before 3 jan 2026
+		minValue: 1200.53, // 15 gennaio 2026
+	},
 };
