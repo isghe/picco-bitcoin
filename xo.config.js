@@ -1,0 +1,25 @@
+import globals from 'globals';
+
+export default [
+	{
+		space: false,
+		semicolon: true,
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.node,
+			},
+		},
+		rules: {
+			'no-alert': 0,
+			'unicorn/string-content': 0,
+			'unicorn/prevent-abbreviations': 0,
+			'unicorn/no-array-for-each': 0,
+			'unicorn/numeric-separators-style': 0,
+			'unicorn/prefer-module': 0,
+			'unicorn/no-typeof-undefined': 0,
+			'eslint-comments/no-unused-disable': 0,
+			'capitalized-comments': 0,
+		},
+	},
+];
