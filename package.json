@@ -1,28 +1,10 @@
 {
+  "type": "module",
   "scripts": {
     "test": "xo"
   },
   "devDependencies": {
-    "xo": "^0.59"
-  },
-  "xo": {
-    "esnext": true,
-    "space": false,
-    "semicolon": true,
-    "rules": {
-      "no-alert": 0,
-      "unicorn/string-content": 0,
-      "unicorn/prevent-abbreviations": 0,
-      "unicorn/no-array-for-each": 0,
-      "unicorn/numeric-separators-style": 0,
-      "unicorn/prefer-module": 0,
-      "unicorn/no-typeof-undefined": 0,
-      "eslint-comments/no-unused-disable": 0,
-      "capitalized-comments": 0
-    },
-    "envs": [
-      "browser",
-      "node"
-    ]
+    "xo": "^2.0.2",
+    "globals": "^16.0.0"
   }
 }

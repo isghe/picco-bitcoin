@@ -1,4 +1,4 @@
-# #picco16
-![#p16](favicons/p16.png)
+# #picco18
+![#p18](favicons/p18.png)
 
-Consultare [README-p12.md](README-p12.md) traslando di quattro anni.
+Consultare [README-p18.md](README-p18.md).
