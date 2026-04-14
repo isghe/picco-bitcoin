@@ -102,7 +102,7 @@ let gController = null; // gController useful just for easy debug
 					const $header = self.util.createElement(['div', null, ['header']]);
 					[['h1', {id: 'title', textContent: self.model.picco[self.model.current.annoGenesi].title}],
 						['h2', {id: 'sub-title', textContent: self.model.picco[self.model.current.annoGenesi].subTitle}]].forEach(dom => $header.append(self.util.createElement(dom)));
-					// document.title = self.model.picco[self.model.current.annoGenesi].title;
+					document.title = self.model.picco[self.model.current.annoGenesi].title;
 					self.model.picco[self.model.current.annoGenesi].data.sort((a, b) => self.infinityIfIsNaN(b[self.model.constants.fieldSatoshiEuro]) - self.infinityIfIsNaN(a[self.model.constants.fieldSatoshiEuro]));
 
 					const currentMinValue = self.model.picco[self.model.current.annoGenesi].minValue;
