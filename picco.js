@@ -80,19 +80,11 @@ const gPicco = {
 		title: '#picco17',
 		subTitle: '(#picco2025)',
 		favicon: 'p17.png',
-		// minValue: 100000000000, // sort of infinite - before 3 jan 2024
-		// minValue: 2445.420656, // 4 gennaio 2024
-		// minValue: 2236.811702, // 11 gennaio 2024
-		// minValue: 1910.8401964343723, // 27 febbraio 2024
-		// minValue: 1483.4814342298507, // 13 marzo 2024
-		// minValue: 1422.499388325263 // 6 novembre 2024, https://opentimestamps.org/
-		// minValue: 1237.219369263091 // 11 novembre 2024, 20:29
-		// minValue: 1208.9157536834152 // 11 novembre 2024, 23:12
-		// minValue: 1191.4831355689766 // 12 novembre 2024, 00:49
-		// minValue: 1110.5232741246743 // 20 novembre 2024, 20:19
-		// minValue: 1079.1629709831423 // 21 novembre 2024, 08:39
-		// minValue: 1001.6126966028002 // 16 dicembre 2024, 01.13
-		minValue: 989.3376117568133, // 16 dicembre 2024, 01.58
+		// minValue: 100000000000, // sort of infinite - before 3 jan 2025
+		// minValue: 980.574813, // 21 gennaio 2025 (recuperato a posteriori da prezzo di chiusura giornaliero)
+		// minValue: 964.701570, // 17 luglio 2025 (recuperato a posteriori da prezzo di chiusura giornaliero)
+		// minValue: 951.456670, // 13 agosto 2025 (recuperato a posteriori da prezzo di chiusura giornaliero)
+		minValue: 935.55872, // 6 ottobre 2025 (recuperato a posteriori da prezzo di chiusura giornaliero)
 	},
 	18: {
 		data: gData18, // eslint-disable-line no-undef
