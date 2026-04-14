@@ -23,15 +23,19 @@ let gController = null; // gController useful just for easy debug
 			self.model = gModel; // eslint-disable-line no-undef
 
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
-			self.matrixToTable = (header, matrix, applyOnElement) => {
+			self.matrixToTable = (header, matrix, threshold) => {
 				const domTable = self.util.createElement(['table']);
 				const domHeader = self.util.createElement(['tr']);
 				header.forEach(value => domHeader.append(self.util.createElement(['th', {textContent: value}])));
 				domTable.append(domHeader);
 				matrix.forEach(row => {
 					const domRow = self.util.createElement(['tr']);
-					row.forEach((value, i) => domRow.append(applyOnElement(row, self.util.createElement(['td', {textContent: value}, ['col_' + i]]), i)));
+					row.forEach((value, i) => domRow.append(self.util.createElement(['td', {textContent: value}, ['col_' + i]])));
 					domTable.append(domRow);
+					if (self.infinityIfIsNaN(row[self.model.constants.columnSatoshiPerBitcoinIndex]) > threshold) {
+						domRow.classList.add('lost');
+					}
+
 					if (typeof (row[5]) !== 'undefined') {
 						domRow.classList.add('penalita');
 					}
@@ -71,14 +75,7 @@ let gController = null; // gController useful just for easy debug
 					const domMatrix = self.matrixToTable(
 						['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'],
 						self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]),
-						(row, domElement, i) => {
-							if (self.infinityIfIsNaN(row[self.model.constants.columnSatoshiPerBitcoinIndex]) > self.model.picco[self.model.current.annoGenesi].minValue) {
-								const classes = ['lost', 'lost-element'];
-								domElement.classList.add(classes[Number(i === self.model.constants.columnSatoshiPerBitcoinIndex)]);
-							}
-
-							return domElement;
-						},
+						self.model.picco[self.model.current.annoGenesi].minValue,
 					);
 					const domFooter = self.util.createElement(['div', null, ['footer']]);
 					[
