@@ -36,6 +36,8 @@ let gController = null; // gController useful just for easy debug
 
 				let thresholdPassed = false;
 				let absoluteThresholdPassed = false;
+				let winnerMarked = false;
+				let absoluteWinnerMarked = false;
 				matrix.forEach(row => {
 					const satoshi = self.infinityIfIsNaN(row[self.model.constants.columnSatoshiPerBitcoinIndex]);
 					if (!thresholdPassed && satoshi <= threshold) {
@@ -57,6 +59,16 @@ let gController = null; // gController useful just for easy debug
 
 					if (satoshi > threshold) {
 						domRow.classList.add('lost');
+					}
+
+					if (thresholdPassed && !winnerMarked) {
+						domRow.classList.add('winner');
+						winnerMarked = true;
+					}
+
+					if (absoluteThresholdPassed && !absoluteWinnerMarked) {
+						domRow.classList.add('winner-absolute');
+						absoluteWinnerMarked = true;
 					}
 
 					if (typeof (row[5]) !== 'undefined') {

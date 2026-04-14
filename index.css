@@ -123,6 +123,16 @@ table{
 	padding: 2px;
 }
 
+.winner-absolute .col_2{
+	color: yellow;
+	font-weight: bold;
+}
+
+.winner .col_2{
+	color: #00ff00;
+	font-weight: bold;
+}
+
 .lost-absolute .col_2{
 	color: orange;
 	font-style: italic;
