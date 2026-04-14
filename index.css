@@ -115,6 +115,11 @@ th{
 table{
 	margin:auto;
 }
+.lost-absolute .col_2{
+	color: orange;
+	font-style: italic;
+}
+
 .lost td{
 	text-decoration-line: line-through;
 	background: #404040;
