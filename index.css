@@ -123,19 +123,19 @@ table{
 	padding: 2px;
 }
 
+.lost-absolute .col_2{
+	color: orange;
+	font-style: italic;
+}
+
 .winner-absolute .col_2{
 	color: yellow;
 	font-weight: bold;
 }
 
 .winner .col_2{
-	color: #00ff00;
+	color: #ff5200;
 	font-weight: bold;
-}
-
-.lost-absolute .col_2{
-	color: orange;
-	font-style: italic;
 }
 
 .lost td{
