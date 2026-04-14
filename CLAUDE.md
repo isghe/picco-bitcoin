@@ -18,7 +18,7 @@ No build step — this is a static site served directly (GitHub Pages).
 
 The app uses plain vanilla JS with no modules. All state lives in globals loaded via `<script>` tags in `index.html` in this order:
 
-1. `data/dataXX.js` → exposes `gData12`…`gData17` (one per edition)
+1. `data/dataXX.js` → exposes `gData12`…`gData18` (one per edition)
 2. `picco.js` → exposes `gPicco` (maps edition number → config + `minValue`)
 3. `model.js` → exposes `gModel` (current edition selection, constants, reference to `gPicco`)
 4. `index.js` → `ClassController` (URL parsing, table rendering, DOM construction)
@@ -37,10 +37,13 @@ Each `data/dataXX.js` file contains an array of objects:
 ```
 
 ### Elimination Logic
-A participant is marked as "lost" (CSS classes `lost` / `lost-element`)
+A participant is marked as "lost" (CSS class `lost` on the `<tr>`)
 when their `satoshi/€` value exceeds `model.picco[current.annoGenesi].minValue`.
-The actual condition is evaluated during DOM rendering via
-`infinityIfIsNaN()` on the `columnSatoshiPerBitcoinIndex` column value.
+The condition is evaluated in `matrixToTable()` via `infinityIfIsNaN()`;
+the satoshi/€ column index is derived dynamically from the header array.
+
+A participant is marked as "lost-absolute" when their `satoshi/€` value exceeds
+the minimum `minValue` across all editions (currently picco17: 935.55872).
 
 > ⚠️ The `penalità` property in data files does NOT determine elimination —
 > it is just an accessory data field. Do not use it as a proxy for "lost" status.
