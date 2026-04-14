@@ -115,16 +115,14 @@ th{
 table{
 	margin:auto;
 }
-.lost-element{
-	/*text-decoration-line: line-through;
-	text-decoration-color: red;*/
-	background: #404040;
-	color: red;
-}
-
-.lost{
+.lost td{
 	text-decoration-line: line-through;
 	background: #404040;
+}
+
+.lost .col_2{
+	color: red;
+	text-decoration-line: none;
 }
 
 .footer{
