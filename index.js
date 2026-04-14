@@ -23,7 +23,7 @@ let gController = null; // gController useful just for easy debug
 			self.model = gModel; // eslint-disable-line no-undef
 
 			self.jsonToMatrix = json => json.map(element => Object.keys(element).map(key => element[key]));
-			self.matrixToTable = (header, matrix, {threshold, absoluteThreshold, separatorLabels}) => {
+			self.matrixToTable = (header, matrix, {threshold, absoluteThreshold, satoshiColIndex, separatorLabels}) => {
 				const domTable = self.util.createElement(['table']);
 				const domHeader = self.util.createElement(['tr']);
 				header.forEach(value => domHeader.append(self.util.createElement(['th', {textContent: value}])));
@@ -39,7 +39,7 @@ let gController = null; // gController useful just for easy debug
 				let winnerMarked = false;
 				let absoluteWinnerMarked = false;
 				matrix.forEach(row => {
-					const satoshi = self.infinityIfIsNaN(row[self.model.constants.columnSatoshiPerBitcoinIndex]);
+					const satoshi = self.infinityIfIsNaN(row[satoshiColIndex]);
 					if (!thresholdPassed && satoshi <= threshold) {
 						insertSeparator(separatorLabels.threshold);
 						thresholdPassed = true;
@@ -110,12 +110,15 @@ let gController = null; // gController useful just for easy debug
 					const currentMinValue = self.model.picco[self.model.current.annoGenesi].minValue;
 					const absoluteMinValue = Math.min(...Object.values(self.model.picco).map(p => p.minValue));
 					const absoluteMinEdition = Object.keys(self.model.picco).find(k => self.model.picco[k].minValue === absoluteMinValue);
+					const header = ['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'];
+					const satoshiColIndex = header.indexOf(self.model.constants.fieldSatoshiEuro);
 					const domMatrix = self.matrixToTable(
-						['indice', 'nome', self.model.constants.fieldSatoshiEuro, 'telegram-id', '€/₿', 'penalità'],
+						header,
 						self.jsonToMatrix(self.model.picco[self.model.current.annoGenesi].data).map((row, i) => [(i + 1), row[0], self.showFloat(row[1]), row[2], self.showFloat(self.convert(row[1])), row[3]]),
 						{
 							threshold: currentMinValue,
 							absoluteThreshold: absoluteMinValue,
+							satoshiColIndex,
 							separatorLabels: {
 								threshold: `minimo #picco${self.model.current.annoGenesi}: ${self.showFloat(currentMinValue)} sat/€ · ${self.showFloat(self.convert(currentMinValue))} €/₿`,
 								absoluteThreshold: `minimo assoluto #picco${absoluteMinEdition}: ${self.showFloat(absoluteMinValue)} sat/€ · ${self.showFloat(self.convert(absoluteMinValue))} €/₿`,

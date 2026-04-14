@@ -5,7 +5,6 @@ const gModel = {
 	},
 	constants: {
 		satoshiPerBitcoin: 100000000,
-		columnSatoshiPerBitcoinIndex: 2,
 		fieldSatoshiEuro: 'satoshi/€',
 		defaultAnnoGenesi: 18,
 		p2pkh: '1p12pYog8jxVL3QaqevM4Gp32MZUoutck',
