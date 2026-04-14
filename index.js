@@ -93,12 +93,10 @@ let gController = null; // gController useful just for easy debug
 			self.infinityIfIsNaN = value => [value, Number.POSITIVE_INFINITY][Number(Number.isNaN(Number(value)) === true)];
 			self.show = () => {
 				const url = new URL(location);
-				const path = url.origin + url.pathname;
-				console.log(path);
 				const params = url.searchParams;
 				self.model.current.annoGenesi = self.getOrDefault(params, 'picco', self.model.constants.defaultAnnoGenesi);
 				const $favicon = document.querySelector('#favicon');
-				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: path + '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
+				const navigators = Object.keys(self.model.picco).map(key => ['a', {href: '?picco=' + key, textContent: '#picco' + key}, ['navigator']]);
 				try {
 					$favicon.setAttribute('href', 'favicons/' + self.model.picco[self.model.current.annoGenesi].favicon);
 					const $header = self.util.createElement(['div', null, ['header']]);
