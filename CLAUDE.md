@@ -60,6 +60,12 @@ the minimum `minValue` across all editions (currently picco17: 935.55872).
 
 `minValue` in `picco.js` is updated manually (with a timestamp comment) whenever Bitcoin hits a new low during the active competition period. This determines who is eliminated.
 
+Use the `/picco-update <value>` slash command to automate this: it comments out the old `minValue`, adds the new one with the current date, runs `npm test`, and commits.
+
+### Navigation Links
+
+Navigator links use relative URLs (`?picco=XX`) so the app works correctly both on GitHub Pages and when opened as a local `file://` URL. Do not use `url.origin + url.pathname` — `url.origin` returns `"null"` for `file://` URLs.
+
 ## Code Style
 
 The linter is `xo` (ESLint-based). Key non-default rules configured in `package.json`:
