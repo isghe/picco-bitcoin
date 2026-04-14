@@ -115,6 +115,14 @@ th{
 table{
 	margin:auto;
 }
+.separator td{
+	text-align: center;
+	color: gray;
+	font-size: smaller;
+	border-top: 1px solid gray;
+	padding: 2px;
+}
+
 .lost-absolute .col_2{
 	color: orange;
 	font-style: italic;
