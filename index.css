@@ -118,7 +118,6 @@ table{
 .separator td{
 	text-align: center;
 	color: gray;
-	font-size: smaller;
 	border-top: 1px solid gray;
 	padding: 2px;
 }
