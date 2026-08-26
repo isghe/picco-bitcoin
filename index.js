@@ -125,7 +125,7 @@ let gController = null; // gController useful just for easy debug
 					);
 					const $footer = self.util.createElement(['div', null, ['footer']]);
 					[
-						['div', {textContent: 'anno genesi ' + self.model.current.annoGenesi}],
+						['a', {textContent: 'anno genesi ' + self.model.current.annoGenesi, href: 'ANNO-GENESI.md'}],
 						['div', {textContent: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'}, ['genesis']],
 						['div', {textContent: theNow}],
 						['a', {textContent: 'GitHub: picco-bitcoin', href: self.model.constants.repository}],
